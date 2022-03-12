@@ -1,14 +1,14 @@
 {
-	"name": "keeper",
+	"name": "ignite",
 	"version": "0.0.1",
-	"description": "monorepo for Keeper project",
+	"description": "Repository with al content developed by me in Ignite ",
 	"private": true,
 	"author": "Josue Placido <josueplacidodasilveirajunior@hotmail.com>",
 	"license": "MIT",
 	"scripts": {
 		"postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
 		"commit": "git-cz",
-		"start-app": "yarn workspace @keeper/app start"
+		"start-app": "yarn workspace @ignite/app start"
 	},
 	"workspaces": {
 		"packages": [
@@ -32,7 +32,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^11.0.0",
 		"@commitlint/config-conventional": "^11.0.0",
-		"@keeper/eslint-config": "*",
+		"@ignite/eslint-config": "*",
 		"commitizen": "^4.2.1",
 		"cross-env": "^7.0.2",
 		"eslint-plugin-import-helpers": "^1.1.0",
