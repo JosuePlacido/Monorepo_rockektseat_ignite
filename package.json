@@ -8,6 +8,7 @@
 	"scripts": {
 		"postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
 		"commit": "git-cz",
+		"start-gopizza": "yarn workspace @ignite/gopizza start",
 		"start-app": "yarn workspace @ignite/app start"
 	},
 	"workspaces": {
