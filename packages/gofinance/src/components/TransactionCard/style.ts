@@ -4,11 +4,11 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import theme from '../../global/styles/theme';
 
 interface AmountProps {
-	type: 'positive' | 'negative';
+	type: 'up' | 'down';
 }
 const colors = {
-	negative: theme.COLORS.attention,
-	positive: theme.COLORS.success
+	down: theme.COLORS.attention,
+	up: theme.COLORS.success
 }
 
 export const Container = styled.View`
@@ -26,7 +26,7 @@ export const Title = styled.Text`
 export const Amount = styled.Text<AmountProps>`
 	font-family: ${({ theme }) => theme.FONTS.regular};
 	font-size: ${RFValue(20)}px;
-	color: ${({ theme, type }) => colors[type]};
+	color: ${({ theme, type }) => type === 'down' ? colors['down'] : colors['up']};
 	margin-top: 2px;
 `;
 export const Footer = styled.View`

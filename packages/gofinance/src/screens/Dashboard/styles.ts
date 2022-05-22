@@ -94,3 +94,10 @@ export const Title = styled.Text`
 	font-family: ${({ theme }) => theme.FONTS.regular};
 	margin-bottom: 16px;
 `;
+
+export const LoadContainer = styled.View`
+	flex:1;
+	background-color: ${({ theme }) => theme.COLORS.background};
+	justify-content: center;
+	align-items: center;
+`;
