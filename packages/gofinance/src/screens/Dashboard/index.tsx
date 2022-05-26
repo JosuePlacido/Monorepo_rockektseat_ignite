@@ -25,6 +25,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 import { useTheme } from 'styled-components/native';
+import { useAuth } from '../../hooks/Auth';
 
 export interface TransactionProps extends TransactionCardProps {
 	id: string;
@@ -43,8 +44,10 @@ interface HighlightData {
 function Dashboard() {
 	const [isLoading, setIsLoading] = useState(true);
 	const theme = useTheme();
-	const handleClick = () => {
-		alert('Button clicked!');
+	const { signOut, user } = useAuth();
+
+	async function handleClick() {
+		await signOut();
 	};
 	const [transactions, setTransactions] = useState<TransactionProps[]>([]);
 	const [highlightData, setHighlightData] = useState<HighlightData>(
@@ -56,14 +59,20 @@ function Dashboard() {
 		items: TransactionProps[],
 		type: 'up' | 'down'
 	) {
+
+		let filteredItems =
+			items
+				.filter(item => item.type === type);
+		if (filteredItems.length == 0) {
+			return null;
+		}
 		const date = new Date(
 			Math.max.apply(
 				Math,
-				items
-					.filter(item => item.type === type)
-					.map(item => new Date(item.date).getTime())
+				filteredItems.map(item => new Date(item.date).getTime())
 			)
 		);
+
 		return `${date.getDate()} de ${date.toLocaleString('pt-BR', {
 			month: 'long'
 		})}`;
@@ -72,7 +81,7 @@ function Dashboard() {
 	async function loadData() {
 		let entriesSum = 0;
 		let costSum = 0;
-		const dataKey = '@gofinance:transaction';
+		const dataKey = `@gofinance:transaction_user:${user!.id}`;
 		const response = await AsyncStorage.getItem(dataKey);
 		const transactions = response ? JSON.parse(response) : [];
 		const formatedData: TransactionProps[] = transactions.map(
@@ -118,21 +127,23 @@ function Dashboard() {
 					style: 'currency',
 					currency: 'BRL'
 				}),
-				lastTransaction: `Última entrada dia ${lastTransactionEntry}`
+				lastTransaction: lastTransactionEntry ? `Última entrada dia ${lastTransactionEntry}` : 'Não há transações'
 			},
 			costs: {
 				amount: costSum.toLocaleString('pt-BR', {
 					style: 'currency',
 					currency: 'BRL'
 				}),
-				lastTransaction: `Última saída dia ${lastTransactionCost}`
+				lastTransaction: lastTransactionCost ? `Última saída dia ${lastTransactionCost}` : 'Não há transações'
 			},
 			total: {
 				amount: (entriesSum - costSum).toLocaleString('pt-BR', {
 					style: 'currency',
 					currency: 'BRL'
 				}),
-				lastTransaction: `De 01 à ${lastTransactionCost}`
+				lastTransaction: lastTransactionCost ? `De 01 à ${lastTransactionCost}` :
+					lastTransactionEntry ? `De 01 à ${lastTransactionCost}` :
+						'Não há transações'
 			}
 		});
 		setIsLoading(false);
@@ -163,12 +174,12 @@ function Dashboard() {
 							<UserInfo>
 								<Photo
 									source={{
-										uri: 'https://github.com/JosuePlacido.png'
+										uri: user!.photo
 									}}
 								/>
 								<User>
 									<UserGreeting>Olá,</UserGreeting>
-									<UserName>Josué</UserName>
+									<UserName>{user?.name}</UserName>
 								</User>
 							</UserInfo>
 							<LogoutButton onPress={handleClick}>

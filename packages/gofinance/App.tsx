@@ -6,17 +6,18 @@ import { ThemeProvider } from 'styled-components';
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold } from '@expo-google-fonts/poppins';
 import 'react-native-gesture-handler';
 import theme from './src/global/styles/theme';
-import AppRoutes from './src/routes/app.routes';
-import { NavigationContainer } from '@react-navigation/native';
 import AppLoading from 'expo-app-loading';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StatusBar } from 'react-native';
+import { AuthProvider, useAuth } from './src/hooks/Auth';
+import Routes from './src/routes';
 //import { StatusBar } from 'react-native';
 
 export default function App() {
 	const [fontsloaded] = useFonts({
 		Poppins_400Regular, Poppins_500Medium, Poppins_700Bold
 	});
+	const { isLoggin } = useAuth();
 
 
 	/*
@@ -44,16 +45,16 @@ export default function App() {
 			}
 		}, [fontsloaded]);*/
 
-	if (!fontsloaded) {
+	if (!fontsloaded && isLoggin) {
 		return <AppLoading />
 	}
 	return (
 		<GestureHandlerRootView style={{ flex: 1 }}>
 			<ThemeProvider theme={theme}>
-				<NavigationContainer>
-					<StatusBar barStyle="light-content" />
-					<AppRoutes />
-				</NavigationContainer>
+				<StatusBar barStyle="light-content" />
+				<AuthProvider>
+					<Routes />
+				</AuthProvider>
 			</ThemeProvider>
 		</GestureHandlerRootView>
 	);

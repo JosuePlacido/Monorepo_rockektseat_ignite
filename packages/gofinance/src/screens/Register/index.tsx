@@ -22,6 +22,7 @@ import {
 import { GestureHandlerRootView, TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationProp, ParamListBase, useNavigation } from '@react-navigation/native';
+import { useAuth } from '../../hooks/Auth';
 
 export type FormData = {
 	[name: string]: any;
@@ -36,8 +37,9 @@ const schema = Yup.object().shape({
 });
 const Register: React.FC = () => {
 	const navigation: NavigationProp<ParamListBase> = useNavigation();
+	const { user } = useAuth();
 
-	const dataKey = "@gofinance:transaction";
+	const dataKey = `@gofinance:transaction_user:${user!.id}`;
 	const [category, setCategory] = useState({
 		key: 'category',
 		name: 'Categoria'
