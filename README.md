@@ -69,8 +69,8 @@
 > **Atention:** some projects nedds a extra steps to work
 
 1. Clone this repository locally `$ git clone https://github.com/josueplacido/monorepo_rockektseat_ignite.git`
-2. Install the dependencies. Inside the root `$ yarn install`
-3. Start some application. `$ yarn start-[projectname]`
+2. Install the dependencies of the projects. Inside the root `cd packages/[project-name]` and then `$ yarn install` or `npm install`
+3. Start the application `yarn start-app` or start app in the root `$ yarn start-[projectname]`
 
 > `OBS: some projects have a bug with metro recongnize some modules, the objects "monorepo configuration" contain que the adjust scripts and the workspaces folders configs `
 
