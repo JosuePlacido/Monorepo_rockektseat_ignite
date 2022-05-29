@@ -9,14 +9,20 @@
 		"postinstall": "cd ./packages/mobile && expo-yarn-workspaces postinstall",
 		"commit": "git-cz",
 		"start-react-native": "yarn workspace @ignite/gopizza start",
-		"start-gopizza": "yarn workspace @ignite/myskills android",
+		"start-gofinance": "cd ./packages/gofinance && expo start",
 		"start-myskills": "yarn workspace @ignite/myskills android",
-		"start-app": "yarn workspace @ignite/app start"
+		"start-app": "yarn workspace @ignite/app start",
+		"reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
 	},
-	"workspaces": {
-		"packages": [
-			"packages/*"
-		]
+	"configs-for-monorepo": {
+		"workspaces": {
+			"packages": [
+				"packages/*"
+			]
+		},
+		"scripts": {
+			"start-gofinance": "yarn workspace @ignite/gofinance start"
+		}
 	},
 	"husky": {
 		"hooks": {

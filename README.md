@@ -35,16 +35,34 @@
 
 > Repository with al content developed by me in Ignite Experience of [Rocketseat](https://github.com/Rocketseat).
 
-## Project structure
+## Projects
 
 [**GoPizza**](./packages/gopizza/README.md)
 
-```
-|- package.json => root workspace (private package used by yarn workspaces)
-|--- packages
-    |-- eslint-config => configuração global do eslint
-    |-- gopizza => app modulo 1 da trilha teact-native
-```
+-   Firebase
+
+[**GoFinance**](./packages/gofinance/README.md) (Chapter 2)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+> **Contents**
+>
+> -   Environment variable
+> -   Login social
+> -   Contexts
+> -   HookForm
+> -   AsyncStorage
+> -   styled-components and theme
+> -   stack and bottom tabs (react-navigation)
+> -   validation Yup
+> -   Rect and borderless buttons
+> -   Date manipulation (date-fns)
+> -   Responsive sizes and Percentage
+> -   SVG as component JSX
+> -   Typescript
+> -   StatusBar helper
+> -   UUID generation
+> -   Chart generation (victory-chart)
 
 ## How to install and execute
 
@@ -53,6 +71,8 @@
 1. Clone this repository locally `$ git clone https://github.com/josueplacido/monorepo_rockektseat_ignite.git`
 2. Install the dependencies. Inside the root `$ yarn install`
 3. Start some application. `$ yarn start-[projectname]`
+
+> `OBS: some projects have a bug with metro recongnize some modules, the objects "monorepo configuration" contain que the adjust scripts and the workspaces folders configs `
 
 ## Autor
 
