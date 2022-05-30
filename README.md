@@ -37,9 +37,28 @@
 
 ## Projects
 
-[**GoPizza**](./packages/gopizza/README.md)
+[**MySkills**](./packages/myskills/README.md)(Chapter 1)
 
--   Firebase
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+> **Contents**
+>
+> -   react-native-cli
+> -   useState
+> -   StyleSheet
+> -   Typescript
+
+[**To.Do**](./packages/ignite-desafio01-tarefas/README.md)(Chapter 1 - challenges)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+> **Contents**
+>
+> -   react-native-cli
+> -   useState
+> -   StyleSheet
+> -   Typescript
+> -   StatusBar helper
 
 [**GoFinance**](./packages/gofinance/README.md) (Chapter 2)
 
