@@ -6,7 +6,7 @@
 
 Application pre-developed by Rocketseat in the course (Ignite), where the focus of the challenge's implemente contexts and manage user session
 
-[Challenge Stream.Data - Login social with Twitch](https://efficient-sloth-d85.notion.site/Desafio-01-SavePass-d0b8fee06c7f41e0a9c644a540c2049b)
+[Challenge Stream.Data - Login social with Twitch](https://efficient-sloth-d85.notion.site/Desafio-02-Login-social-com-a-Twitch-df08c41b20644d4b87bee2eaac131ddc)
 
 ## Missions
 
