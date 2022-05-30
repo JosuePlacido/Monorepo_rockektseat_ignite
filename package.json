@@ -12,6 +12,7 @@
 		"start-myskills": "cd ./packages/myskills && yarn android",
 		"start-gofinance": "cd ./packages/gofinance && expo start",
 		"start-savepass": "cd ./packages/ignite-savepass && expo start",
+		"start-stream.data": "cd ./packages/ignite-stream.data && expo start",
 		"start-todo": "cd ./packages/ignite-desafio01-tarefas && yarn android",
 		"start-app": "yarn workspace @ignite/app start",
 		"reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
@@ -25,6 +26,7 @@
 		"scripts": {
 			"start-gofinance": "yarn workspace @ignite/gofinance start",
 			"start-savepass": "yarn workspace @ignite/savepass start",
+			"start-stream.data": "yarn workspace @ignite/stream.data start",
 			"start-myskills": "yarn workspace @ignite/myskills android",
 			"start-todo": "yarn workspace @ignite/todo android"
 		}

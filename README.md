@@ -83,7 +83,7 @@
 > -   UUID generation
 > -   Chart generation (victory-chart)
 
-[**SavePass**](./packages/ignite-savepass/README.md) (Chapter 2 - Challenge 1: )
+[**SavePass**](./packages/ignite-savepass/README.md) (Chapter 2 - Challenge 1: SavePass App)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
@@ -99,13 +99,31 @@
 > -   StatusBar helper
 > -   UUID generation
 
+[**stream.data**](./packages/ignite-stream.data/README.md) (Chapter 2 - Challenge 2: Contexts and Login with Twitch)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+> **Contents**
+>
+> -   Environment variable
+> -   Login social
+> -   Contexts
+> -   AsyncStorage
+> -   styled-components and theme
+> -   stack and bottom tabs (react-navigation)
+> -   Responsive sizes and Percentage
+> -   SVG as component JSX
+> -   Typescript
+> -   StatusBar helper
+
 ## How to install and execute
 
 > **Atention:** some projects nedds a extra steps to work
 
 1. Clone this repository locally `$ git clone https://github.com/josueplacido/monorepo_rockektseat_ignite.git`
-2. Install the dependencies of the projects. Inside the root `cd packages/[project-name]` and then `$ yarn install` or `npm install`
-3. Start the application `yarn start-app` or start app in the root `$ yarn start-[projectname]`
+1. Install the dependencies of the projects. Inside the root `cd packages/[project-name]` and then `$ yarn install` or `npm install`
+1. Configure .env file if is necessary
+1. Start the application `yarn start-app` or start app in the root `$ yarn start-[projectname]`
 
 > `OBS: some projects have a bug with metro recongnize some modules, the objects "monorepo configuration" contain que the adjust scripts and the workspaces folders configs `
 
