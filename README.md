@@ -116,6 +116,19 @@
 > -   Typescript
 > -   StatusBar helper
 
+[**RENTX**](./packages/rentx/README.md) (Chapter 3 - Consumes API
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+> **Contents**
+>
+> -   styled-components and theme
+> -   stack navigation (react-navigation)
+> -   Responsive sizes and Percentage
+> -   SVG as component JSX
+> -   Typescript
+> -   StatusBar helper
+
 ## How to install and execute
 
 > **Atention:** some projects nedds a extra steps to work
