@@ -22,6 +22,7 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 -   [React Navigation](https://reactnavigation.org/): Navigate between screens
 -   [Date fns](https://date-fns.org/): Calculate and format Dates
 -   [React Hook Form](https://react-hook-form.com/): Validation, perform fields
+-   [Date fns](https://date-fns.org/): Calculate and format Dates
 -   [react-native-iphone-x-helper](https://npm.io/package/react-native-iphone-x-helper): Get sizes of Specificx elements of Device
 -   [react-native-responsive-fontsize](https://github.com/heyman333/react-native-responsive-fontSize): Turn the sizes responsives
 -   [react-native-svg](https://github.com/react-native-svg/react-native-svg): Support the usage of SVGs files
@@ -33,6 +34,7 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 -   stack and tabs navigation
 -   validation of forms
 -   generating Charts
+-   Date manipulation
 -   Rect and Borderless buttons usage
 
 ## Autor

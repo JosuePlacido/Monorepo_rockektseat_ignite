@@ -1,16 +1,9 @@
 import React from 'react';
-import { useNavigation } from '@react-navigation/native';
-
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 import Acessory from '../../components/Acessory';
 import BackButton from '../../components/BackButton';
 import ImageSlider from '../../components/ImageSlider';
-import ForceSvg from '../../assets/force.svg';
-import AccelerateSvg from '../../assets/acceleration.svg';
-import EnergySvg from '../../assets/energy.svg';
-import PeopleSvg from '../../assets/people.svg';
-import SpeedSvg from '../../assets/speed.svg';
-import ExchangeSvg from '../../assets/exchange.svg';
 import {
 	About,
 	Acessories,
@@ -28,12 +21,19 @@ import {
 	Rent
 } from './styles';
 import Button from '../../components/Button';
+import { CarDTO } from '../../DTOs/carDTO';
+import { getIcon } from '../../utils/getAcessoryIcon';
+
+interface Params {
+	car: CarDTO;
+}
 
 export default function CarDetails() {
 	const navigation = useNavigation();
-
+	const route = useRoute();
+	const { car } = route.params as Params;
 	function handleSelectRentPeriod() {
-		navigation.navigate("Scheduling");
+		navigation.navigate('Scheduling', { car });
 	}
 
 	return (
@@ -42,41 +42,34 @@ export default function CarDetails() {
 				<BackButton onPress={() => navigation.goBack()} />
 			</Header>
 			<CarImages>
-				<ImageSlider
-					imagesUrl={[
-						'https://e7.pngegg.com/pngimages/329/794/png-clipart-2018-audi-rs-5-2014-audi-rs-5-car-audi-rs-6-car-sedan-performance-car.png'
-					]}
-				/>
+				<ImageSlider imagesUrl={car.photos} />
 			</CarImages>
 
 			<Content>
 				<Details>
 					<Description>
-						<Brand>Lamborghini</Brand>
-						<Name>Huracan</Name>
+						<Brand>{car.brand}</Brand>
+						<Name>{car.name}</Name>
 					</Description>
 					<Rent>
-						<Period>ao dia</Period>
-						<Price>R$ 120,00</Price>
+						<Period>{car.rent.period}</Period>
+						<Price>
+							R$ {car.rent.price}
+						</Price>
 					</Rent>
 				</Details>
-
 				<Acessories>
-					<Acessory name="Força" icon={ForceSvg} />
-					<Acessory name="Aceleração" icon={AccelerateSvg} />
-					<Acessory name="Velocidade" icon={SpeedSvg} />
-					<Acessory name="Elétrico" icon={EnergySvg} />
-					<Acessory name="Pessoas" icon={PeopleSvg} />
-					<Acessory name="Exchange" icon={ExchangeSvg} />
+					{car.accessories.map(item => (
+						<Acessory name={item.name} icon={getIcon(item.type)} />
+					))}
 				</Acessories>
-				<About>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Curabitur vehicula iaculis turpis, eu tempus ipsum luctus
-					non. Aliquam hendrerit purus ut metus aliquet aliquam.
-				</About>
+				<About>{car.about}</About>
 			</Content>
 			<Footer>
-				<Button title="Escolher período de aluguel" onPress={handleSelectRentPeriod} />
+				<Button
+					title="Escolher período de aluguel"
+					onPress={handleSelectRentPeriod}
+				/>
 			</Footer>
 		</Container>
 	);

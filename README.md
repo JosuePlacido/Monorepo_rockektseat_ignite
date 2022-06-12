@@ -116,7 +116,7 @@
 > -   Typescript
 > -   StatusBar helper
 
-[**RENTX**](./packages/rentx/README.md) (Chapter 3 - Consumes API
+[**RENTX**](./packages/rentx/README.md) (Chapter 3 - Consumes API)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
@@ -128,6 +128,8 @@
 > -   SVG as component JSX
 > -   Typescript
 > -   StatusBar helper
+> -   Date manipulation (date-fns)
+> -   SVG as component JSX
 
 ## How to install and execute
 
