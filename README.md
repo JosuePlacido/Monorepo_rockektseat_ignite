@@ -130,6 +130,7 @@
 > -   StatusBar helper
 > -   Date manipulation (date-fns)
 > -   SVG as component JSX
+> -   Animations
 
 ## How to install and execute
 

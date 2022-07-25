@@ -8,6 +8,7 @@ import Scheduling from '../screens/Scheduling';
 import SchedulingCompleted from '../screens/SchedulingCompleted';
 import SchedulingDetails from '../screens/SchedulingDetails';
 import MyCars from '../screens/MyCars';
+import Splash from '../screens/Splash';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -17,7 +18,10 @@ export default function Routes() {
 			<Navigator screenOptions={{
 				headerMode: 'false'
 			}}>
-				<Screen name="Home" component={Home} />
+				<Screen name="Splash" component={Splash} />
+				<Screen name="Home" component={Home} options={{
+					gestureEnabled: false
+				}} />
 				<Screen name="CarDetails" component={CarDetails} />
 				<Screen name="Scheduling" component={Scheduling} />
 				<Screen

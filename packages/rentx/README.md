@@ -20,22 +20,18 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 -   [styled-components](https://styled-components.com/)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [React Navigation](https://reactnavigation.org/): Navigate between screens
--   [Date fns](https://date-fns.org/): Calculate and format Dates
 -   [React Hook Form](https://react-hook-form.com/): Validation, perform fields
--   [Date fns](https://date-fns.org/): Calculate and format Dates
 -   [react-native-iphone-x-helper](https://npm.io/package/react-native-iphone-x-helper): Get sizes of Specificx elements of Device
 -   [react-native-responsive-fontsize](https://github.com/heyman333/react-native-responsive-fontSize): Turn the sizes responsives
 -   [react-native-svg](https://github.com/react-native-svg/react-native-svg): Support the usage of SVGs files
 -   [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer): Permit import SVG as a JSX/TSX component.
+-   [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/): Support for animations
 
 ### Concepts studed or applied
 
--   theming
--   stack and tabs navigation
--   validation of forms
--   generating Charts
--   Date manipulation
--   Rect and Borderless buttons usage
+-   Consumes the API
+-   Animating the Components
+-   SplashScreen animated
 
 ## Autor
 
