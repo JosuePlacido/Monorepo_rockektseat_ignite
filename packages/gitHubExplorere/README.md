@@ -1,6 +1,6 @@
-# SavePass - Ignite | React Native
+# gitHubExplorer - Ignite | React Native
 
-## Challenge 03 - SavePass
+## Challenge 05 - gitHubExplorer
 
 ## :page_with_curl: About <a id = "sobre"></a>
 
