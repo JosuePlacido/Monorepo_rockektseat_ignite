@@ -15,6 +15,7 @@
 		"start-stream.data": "cd ./packages/ignite-stream.data && expo start",
 		"start-todo": "cd ./packages/ignite-desafio01-tarefas && yarn android",
 		"start-rentx": "cd ./packages/rentx && expo start",
+		"start-githubexplorer": "cd ./packages/gitHubExplorere && expo start",
 		"start-app": "yarn workspace @ignite/app start",
 		"reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
 	},
@@ -30,7 +31,8 @@
 			"start-stream.data": "yarn workspace @ignite/stream.data start",
 			"start-myskills": "yarn workspace @ignite/myskills android",
 			"start-todo": "yarn workspace @ignite/todo android",
-			"start-rentx": "yarn workspace @ignite/rentx android"
+			"start-rentx": "yarn workspace @ignite/rentx android",
+			"start-githubexplorer": "cyarn workspace @ignite/githubexplorer android"
 		}
 	},
 	"husky": {

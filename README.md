@@ -130,6 +130,24 @@
 > -   StatusBar helper
 > -   Date manipulation (date-fns)
 > -   SVG as component JSX
+> -   Asyncrhonous call and calling an API with Axios
+> -   Animations
+
+[**GitHub Explorer**](./packages/gitHubExplorere/README.md) (Chapter 2 - Challenge 1: SavePass App)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+> **Contents**
+>
+> -   styled-components and theme
+> -   stack navigation (react-navigation)
+> -   Responsive sizes and Percentage
+> -   SVG as component JSX
+> -   Typescript
+> -   StatusBar helper
+> -   Date manipulation (date-fns)
+> -   UUID generation
+> -   Asyncrhonous call and calling an API with Axios
 > -   Animations
 
 ## How to install and execute
