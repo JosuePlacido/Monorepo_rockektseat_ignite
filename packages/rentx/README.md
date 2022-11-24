@@ -26,6 +26,10 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 -   [react-native-svg](https://github.com/react-native-svg/react-native-svg): Support the usage of SVGs files
 -   [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer): Permit import SVG as a JSX/TSX component.
 -   [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/): Support for animations
+-   [FastImage](https://github.com/DylanVann/react-native-fast-image): Apply cache and lazyload on images
+-   [WatermeloDB](https://github.com/Nozbe/WatermelonDB): SGBD for persist data on device
+-   [NetInfo](https://github.com/react-native-netinfo/react-native-netinfo): Lib for check and notify when internet connection is on/off
+-   [yup](https://github.com/jquense/yup): Support modeling and validation with error messages
 
 ### Concepts studed or applied
 

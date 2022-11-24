@@ -10,7 +10,8 @@ import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
-import Routes from './src/routes/app.routes';
+import Routes from './src/routes';
+import { AppProvider } from './src/hooks';
 
 export default function App() {
 	const [fontsloaded] = useFonts({
@@ -20,10 +21,12 @@ export default function App() {
 		Inter_400Regular,
 		Inter_500Medium
 	});
-	if (!fontsloaded) return <AppLoading />
+	if (!fontsloaded) return <AppLoading />;
 	return (
 		<ThemeProvider theme={theme}>
-			<Routes />
+			<AppProvider>
+				<Routes />
+			</AppProvider>
 		</ThemeProvider>
 	);
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
+import { format } from 'date-fns';
 import Acessory from '../../components/Acessory';
 import BackButton from '../../components/BackButton';
 import ImageSlider from '../../components/ImageSlider';
@@ -38,56 +39,105 @@ import { CarDTO } from '../../DTOs/carDTO';
 import { getIcon } from '../../utils/getAcessoryIcon';
 import api from '../../services/api';
 import { Alert } from 'react-native';
+import { useNetInfo } from '@react-native-community/netinfo';
+import { useAuth } from '../../hooks/auth';
+import { getPlatformDate } from '../../utils/getPlatformDate';
 
 interface Params {
 	car: CarDTO;
 	dates: string[];
-	rentalPeriod: RentalPeriod;
 }
+
 interface RentalPeriod {
-	startFormatted: string;
-	endFormatted: string;
+	start: string;
+	end: string;
 }
+
 export default function SchedulingDetails() {
 	const theme = useTheme();
+	const { user } = useAuth();
+
+	const [rentalPeriod, setRentalPeriod] = useState<RentalPeriod>(
+		{} as RentalPeriod
+	);
+	const [carUpdated, setCarUpdated] = useState<CarDTO>({} as CarDTO);
 	const navigation = useNavigation();
+	const netInfo = useNetInfo();
 	const [isSubmiting, setIsSubmiting] = useState(false);
 
-	async function handleConfirmRent() {
-		const schedulesByCar = await api.get(`/schedules_bycars/${car.id}`);
-
-		const unavailable_dates = [
-			...schedulesByCar.data.unavailable_dates,
-			...dates
-		];
-		setIsSubmiting(true);
-		await api
-			.post(`/schedules_byuser`, {
-				user_id: 2,
-				car: car,
-				startDate: rentalPeriod.startFormatted,
-				endDate: rentalPeriod.endFormatted
-			})
-			.then(() => navigation.navigate('SchedulingCompleted'))
-			.catch((error) => {
-				console.log(error);
-				Alert.alert('Não foi possível confirmar o agendamento')
-				setIsSubmiting(false);
-			}
-
-			);
-	}
 	const route = useRoute();
-	const { car, dates, rentalPeriod } = route.params as Params;
+	const { car, dates } = route.params as Params;
+	const rentTotal = Number(dates.length * car.price);
 
-	useEffect(() => { }, []);
+	async function handleConfirmRent() {
+		setIsSubmiting(true);
+
+		await api
+			.post(
+				`rentals`,
+				{
+					user_id: user.user_id,
+					car_id: car.id,
+					start_date: new Date(dates[0]),
+					end_date: new Date(dates[dates.length - 1]),
+					total: rentTotal
+				} /*,
+				{
+					headers: { authorization: `Bearer ${user.token}` }
+				}*/
+			)
+			.then(() =>
+				navigation.navigate('Confirmation', {
+					title: 'Carro Alugado',
+					message: `Agora você só precisa ir \nna concessionário da RENTX \npegar o seu automóvel`,
+					nextScreenRoute: 'Home'
+				})
+			)
+			.catch(error => {
+				console.log(error);
+				console.log(api.defaults.headers);
+				Alert.alert('Não foi possível confirmar o agendamento');
+				setIsSubmiting(false);
+			});
+	}
+
+	useEffect(() => {
+		async function fetchCarUpfdated() {
+			const response = await api.get(`/cars/${car.id}`);
+			setCarUpdated(response.data);
+		}
+		if (netInfo.isConnected === true) {
+			fetchCarUpfdated();
+		}
+	}, [netInfo.isConnected]);
+
+	useEffect(() => {
+		setRentalPeriod({
+			start: format(getPlatformDate(new Date(dates[0])), 'dd/MM/yyyy'),
+			end: format(
+				getPlatformDate(new Date(dates[dates.length - 1])),
+				'dd/MM/yyyy'
+			)
+		});
+	}, []);
 	return (
 		<Container>
 			<Header>
 				<BackButton onPress={() => navigation.goBack()} />
 			</Header>
 			<CarImages>
-				<ImageSlider imagesUrl={car.photos} />
+				<ImageSlider
+					imagesUrl={
+						!!carUpdated.photos
+							? carUpdated.photos
+							: [
+									{
+										id: car.thumbnail,
+										photo: car.thumbnail
+									}
+							  ]
+					}
+				/>
 			</CarImages>
 
 			<Content>
@@ -97,14 +147,18 @@ export default function SchedulingDetails() {
 						<Name>{car.name}</Name>
 					</Description>
 					<Rent>
-						<Period>{car.rent.period}</Period>
-						<Price>R$ {car.rent.price}</Price>
+						<Period>{car.period}</Period>
+						<Price>R$ {car.price}</Price>
 					</Rent>
 				</Details>
 				<Acessories>
-					{car.accessories.map(item => (
-						<Acessory name={item.name} icon={getIcon(item.type)} />
-					))}
+					{!!carUpdated.accessories &&
+						carUpdated.accessories.map(item => (
+							<Acessory
+								name={item.name}
+								icon={getIcon(item.type)}
+							/>
+						))}
 				</Acessories>
 				<RentalPeriod>
 					<CalendarIcon>
@@ -116,7 +170,7 @@ export default function SchedulingDetails() {
 					</CalendarIcon>
 					<DateInfo>
 						<DateTitle>De</DateTitle>
-						<DateValue>{rentalPeriod.startFormatted}</DateValue>
+						<DateValue>{rentalPeriod.start}</DateValue>
 					</DateInfo>
 					<Feather
 						name="chevron-right"
@@ -125,7 +179,7 @@ export default function SchedulingDetails() {
 					/>
 					<DateInfo>
 						<DateTitle>Até</DateTitle>
-						<DateValue>{rentalPeriod.endFormatted}</DateValue>
+						<DateValue>{rentalPeriod.end}</DateValue>
 					</DateInfo>
 				</RentalPeriod>
 
@@ -133,10 +187,10 @@ export default function SchedulingDetails() {
 					<RentalPriceLabel>TOTAL</RentalPriceLabel>
 					<RentalPriceDetails>
 						<RentalPriceQuota>
-							R$ {car.rent.price} x{dates.length} diárias
+							R$ {car.price} x{dates.length} diárias
 						</RentalPriceQuota>
 						<RentalPriceTotal>
-							R$ {car.rent.price * dates.length}
+							R$ {car.price * dates.length}
 						</RentalPriceTotal>
 					</RentalPriceDetails>
 				</RentalPrice>
@@ -146,7 +200,7 @@ export default function SchedulingDetails() {
 					title="Alugar agora"
 					color={theme.colors.success}
 					onPress={handleConfirmRent}
-					enable={!isSubmiting}
+					enabled={!isSubmiting}
 					load={isSubmiting}
 				/>
 			</Footer>

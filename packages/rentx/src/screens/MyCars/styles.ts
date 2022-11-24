@@ -35,7 +35,7 @@ export const Subtitle = styled.Text`
    margin-top: 24px;
 `;
 
-export const Content = styled.View`
+export const Content = styled.ScrollView`
 	width: 100%;
 	padding: 0 16px;
 `;

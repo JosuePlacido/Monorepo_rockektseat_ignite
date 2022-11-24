@@ -6,7 +6,7 @@ import { AntDesign } from '@expo/vector-icons';
 import BackButton from '../../components/BackButton';
 import Car from '../../components/car';
 import Load from '../../components/Load';
-import { CarDTO } from '../../DTOs/carDTO';
+import { Car as ModelCar } from '../../databases/model/Car';
 import api from '../../services/api';
 import {
 	Appointments,
@@ -23,26 +23,39 @@ import {
 	Subtitle,
 	Title
 } from './styles';
+import { format, parseISO } from 'date-fns';
 
-interface CarProps {
+interface DataProps {
 	id: string;
-	user_id: string;
-	car: CarDTO;
-	startDate: string;
-	endDate: string;
+	car: ModelCar;
+	start_date: string;
+	end_date: string;
 }
+
 export default function MyCars() {
 	const theme = useTheme();
 	const navigation = useNavigation();
+	const screenInFocus = useIsFocus();
 
-	const [cars, setCars] = useState<CarProps[]>([]);
+	const [cars, setCars] = useState<DataProps[]>([]);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		async function fetchCars() {
 			try {
-				const response = await api.get(`/schedules_byuser?user_id=2`);
-				setCars(response.data);
+				const response = await api.get(`/rentals`);
+				const dataFormatted = response.data.map((data: DataProps) => {
+					return {
+						id: data.id,
+						car: data.car,
+						start_date: format(
+							parseISO(data.start_date),
+							'dd/MM/yyyy'
+						),
+						end_date: format(parseISO(data.end_date), 'dd/MM/yyyy')
+					};
+				});
+				setCars(dataFormatted);
 			} catch (error) {
 				console.log(error);
 				Alert.alert('Falha ao carregar suas locações');
@@ -51,7 +64,7 @@ export default function MyCars() {
 			}
 		}
 		fetchCars();
-	}, []);
+	}, [screenInFocus]);
 
 	return (
 		<Container>
@@ -96,7 +109,7 @@ export default function MyCars() {
 									<CarFooterTitle>PERÍODO</CarFooterTitle>
 									<CarFooterPeriod>
 										<CarFooterDate>
-											{item.startDate}
+											{item.start_date}
 										</CarFooterDate>
 										<AntDesign
 											name="arrowright"
@@ -105,7 +118,7 @@ export default function MyCars() {
 											style={{ marginHorizontal: 10 }}
 										/>
 										<CarFooterDate>
-											{item.endDate}
+											{item.end_date}
 										</CarFooterDate>
 									</CarFooterPeriod>
 								</CarFooter>
@@ -116,4 +129,7 @@ export default function MyCars() {
 			)}
 		</Container>
 	);
+}
+function useIsFocus() {
+	throw new Error('Function not implemented.');
 }

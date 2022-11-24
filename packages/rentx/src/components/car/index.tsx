@@ -1,8 +1,9 @@
+import { useNetInfo } from '@react-native-community/netinfo';
 import React from 'react';
 import { RectButtonProps } from 'react-native-gesture-handler';
 
 import GasolineSvg from '../../assets/gasoline.svg';
-import { CarDTO } from '../../DTOs/carDTO';
+import { Car as ModelCar } from '../../databases/model/Car';
 import {
 	About,
 	Brand,
@@ -16,11 +17,11 @@ import {
 	Type
 } from './styles';
 interface Props extends RectButtonProps {
-	data: CarDTO;
+	data: ModelCar;
 }
 
 export default function Car({ data, ...rest }: Props) {
-
+	const netInfo = useNetInfo();
 	return (
 		<Container {...rest}>
 			<Details>
@@ -28,10 +29,10 @@ export default function Car({ data, ...rest }: Props) {
 				<Name>{data.name}</Name>
 				<About>
 					<Rent>
-						<Period>{data.rent.period}</Period>
-						<Price>{data.rent.price.toLocaleString('pt-BR', {
-							style: 'currency', currency: 'BRL'
-						})}</Price>
+						<Period>{data.period}</Period>
+						<Price>
+							{netInfo.isConnected ? 'R$ ' + data.price : '...'}
+						</Price>
 					</Rent>
 					<Type>
 						<GasolineSvg />

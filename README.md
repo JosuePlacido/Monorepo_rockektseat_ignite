@@ -116,7 +116,7 @@
 > -   Typescript
 > -   StatusBar helper
 
-[**RENTX**](./packages/rentx/README.md) (Chapter 3 - Consumes API)
+[**RENTX**](./packages/rentx/README.md) (Chapter 3 - Consumes API/Chapter 4 - Offline First)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
@@ -132,6 +132,12 @@
 > -   SVG as component JSX
 > -   Asyncrhonous call and calling an API with Axios
 > -   Animations
+> -   Offfline first
+> -   WatermeloDB
+> -   Fast Image
+> -   NetInfo
+
+**RENTX backend** (Chapter 4 - Backend for mobile first on Ch-4)
 
 [**GitHub Explorer**](./packages/gitHubExplorere/README.md) (Chapter 2 - Challenge 1: SavePass App)
 

@@ -1,90 +1,74 @@
 import React, { useEffect, useState } from 'react';
-import { BackHandler, StatusBar, StyleSheet } from 'react-native';
+import { StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { Ionicons } from '@expo/vector-icons';
-import Animated, {
-	withSpring,
-	useAnimatedGestureHandler,
-	useAnimatedStyle,
-	useSharedValue
-} from 'react-native-reanimated';
+import NetInfo, { useNetInfo } from '@react-native-community/netinfo';
+import { synchronize } from '@nozbe/watermelondb/sync';
+import { database } from '../../databases';
 
-const ButtonAnimated = Animated.createAnimatedComponent(RectButton);
-
-import {
-	CarList,
-	Container,
-	Header,
-	HeaderContent,
-	MyCarsButton,
-	TotalCars
-} from './styles';
+import { CarList, Container, Header, HeaderContent, TotalCars } from './styles';
 import Logo from '../../assets/logo.svg';
 import Car from '../../components/car';
+import { Car as ModelCar } from '../../databases/model/Car';
 import api from '../../services/api';
 import { CarDTO } from '../../DTOs/carDTO';
 import Load from '../../components/Load';
-import { useTheme } from 'styled-components';
-import { PanGestureHandler, RectButton } from 'react-native-gesture-handler';
+import Button from '../../components/Button';
 
 export default function Home() {
-	const [cars, setCars] = useState<CarDTO[]>([]);
+	const [cars, setCars] = useState<ModelCar[]>([]);
 	const [loading, setLoading] = useState(false);
 	const navigation = useNavigation();
-	const theme = useTheme();
-
-	const positionX = useSharedValue(0);
-	const positionY = useSharedValue(0);
-
-	const OnGestureEvent = useAnimatedGestureHandler({
-		onStart(_, ctx: any) {
-			ctx.positionX = positionX.value;
-			ctx.positionY = positionY.value;
-		},
-		onActive(event, ctx: any) {
-			positionX.value = ctx.positionX + event.translationX;
-			positionY.value = ctx.positionY + event.translationY;
-		},
-		onEnd() {
-			positionX.value = withSpring(0);
-			positionY.value = withSpring(0);
-		},
-	});
-
-	const MyCarsButtonStyle = useAnimatedStyle(() => {
-		return {
-			transform: [
-				{ translateX: positionX.value },
-				{ translateY: positionY.value }
-			]
-		};
-	});
+	const netInfo = useNetInfo();
 
 	function handleCarDetails(car: CarDTO) {
 		navigation.navigate('CarDetails', { car });
 	}
 
-	function handleMyCars() {
-		navigation.navigate('MyCars');
+	async function offlineSynchronize() {
+		await synchronize({
+			database,
+			pullChanges: async ({ lastPulledAt }) => {
+				const response = await api.get(
+					`cars/sync/pull?lastPulledVersion=${lastPulledAt || 0}`
+				);
+				const { changes, latestVersion } = response.data;
+
+				return { changes, timestamp: latestVersion };
+			},
+			pushChanges: async ({ changes }) => {
+				const user = changes.users;
+				await api.post('/users/sync', user).catch(console.error);
+			}
+		});
 	}
 
 	useEffect(() => {
+		let isMounted = true;
 		async function loadData() {
 			try {
 				setLoading(true);
-				const response = await api.get('/cars');
-				const result = response.data;
-				setCars(result);
+				const carCollection = database.get<ModelCar>('cars');
+				const cars = await carCollection.query().fetch();
+				if (isMounted) {
+					setCars(cars);
+				}
 			} catch (error) {
 				console.error(error);
 			} finally {
-				setLoading(false);
+				isMounted && setLoading(false);
 			}
 		}
 		loadData();
-
-		BackHandler.addEventListener('hardwareBackPress', () => true);
+		return () => {
+			isMounted = false;
+		};
 	}, []);
+
+	useEffect(() => {
+		if (netInfo.isConnected) {
+			offlineSynchronize();
+		}
+	}, [netInfo.isConnected]);
 
 	return (
 		<Container>
@@ -96,7 +80,9 @@ export default function Home() {
 			<Header>
 				<HeaderContent>
 					<Logo width={108} height={12} />
-					{!loading && <TotalCars>Total de {cars.length} carros</TotalCars>}
+					{!loading && (
+						<TotalCars>Total de {cars.length} carros</TotalCars>
+					)}
 				</HeaderContent>
 			</Header>
 			{loading ? (
@@ -113,39 +99,6 @@ export default function Home() {
 					)}
 				/>
 			)}
-
-			<PanGestureHandler onGestureEvent={OnGestureEvent}>
-				<Animated.View style={[MyCarsButtonStyle]}>
-					<ButtonAnimated
-						onPress={handleMyCars}
-						style={[
-							styles.myCarsButton,
-							{
-								backgroundColor: theme.colors.main
-							}
-						]}
-					>
-						<Ionicons
-							name="ios-car-sport"
-							size={32}
-							color={theme.colors.shape}
-						/>
-					</ButtonAnimated>
-				</Animated.View>
-			</PanGestureHandler>
 		</Container>
 	);
 }
-
-const styles = StyleSheet.create({
-	myCarsButton: {
-		position: 'absolute',
-		bottom: 22,
-		right: 13,
-		width: 60,
-		height: 60,
-		borderRadius: 30,
-		justifyContent: 'center',
-		alignItems: 'center'
-	}
-});
