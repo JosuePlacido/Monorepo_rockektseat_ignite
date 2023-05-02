@@ -136,6 +136,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+		//Detox
+		testBuildType System.getProperty('testBuildType','debug')
+		testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     splits {
         abi {
@@ -181,7 +184,7 @@ android {
             def abi = output.getFilter(OutputFile.ABI)
             if (abi != null) {  // null for the universal-debug, universal-release variants
                 output.versionCodeOverride =
-                        defaultConfig.versionCode * 1000 + versionCodes.get(abi)
+       	                 defaultConfig.versionCode * 1000 + versionCodes.get(abi)
             }
 
         }
@@ -207,6 +210,11 @@ dependencies {
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'
     }
+
+	//Detox
+	androidTestImplementation('com.wix:detox:+') { transitive = true }
+	androidTestImplementation 'junit:junit:4.12'
+
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
