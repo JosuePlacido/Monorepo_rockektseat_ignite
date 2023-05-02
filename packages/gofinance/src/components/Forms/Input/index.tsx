@@ -3,8 +3,9 @@ import { TextInputProps, View } from 'react-native';
 
 import { Container } from './styles';
 
-type Props = TextInputProps;
-export default function Input({ ...rest }: Props) {
-	return <Container {...rest} />;
+interface Props extends TextInputProps {
+	active?: boolean;
 }
-
+export default function Input({ active = false, ...rest }: Props) {
+	return <Container active={active} {...rest} />;
+}
