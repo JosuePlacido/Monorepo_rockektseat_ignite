@@ -5,10 +5,8 @@
 </p>
 
 <p align="center">
-
   <img alt="License" src="https://img.shields.io/badge/license-MIT-01B755">
-</p>
-<p align="center">
+
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
 
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
@@ -35,137 +33,41 @@
 
 > Repository with al content developed by me in Ignite Experience of [Rocketseat](https://github.com/Rocketseat).
 
-## Projects
+## Projects - Season 2024
+
+## Projects - Season 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
-> **Contents**
->
-> -   react-native-cli
-> -   useState
-> -   StyleSheet
-> -   Typescript
-
 [**To.Do**](./packages/ignite-desafio01-tarefas/README.md)(Chapter 1 - challenges)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-
-> **Contents**
->
-> -   react-native-cli
-> -   useState
-> -   StyleSheet
-> -   Typescript
-> -   StatusBar helper
 
 [**GoFinance**](./packages/gofinance/README.md) (Chapter 2)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
-> **Contents**
->
-> -   Environment variable
-> -   Login social
-> -   Contexts
-> -   HookForm
-> -   AsyncStorage
-> -   styled-components and theme
-> -   stack and bottom tabs (react-navigation)
-> -   validation Yup
-> -   Rect and borderless buttons
-> -   Date manipulation (date-fns)
-> -   Responsive sizes and Percentage
-> -   SVG as component JSX
-> -   Typescript
-> -   StatusBar helper
-> -   UUID generation
-> -   Chart generation (victory-chart)
-
 [**SavePass**](./packages/ignite-savepass/README.md) (Chapter 2 - Challenge 1: SavePass App)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-
-> **Contents**
->
-> -   HookForm
-> -   AsyncStorage
-> -   styled-components and theme
-> -   stack and bottom tabs (react-navigation)
-> -   validation Yup
-> -   Responsive sizes and Percentage
-> -   Typescript
-> -   StatusBar helper
-> -   UUID generation
 
 [**stream.data**](./packages/ignite-stream.data/README.md) (Chapter 2 - Challenge 2: Contexts and Login with Twitch)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
-> **Contents**
->
-> -   Environment variable
-> -   Login social
-> -   Contexts
-> -   AsyncStorage
-> -   styled-components and theme
-> -   stack and bottom tabs (react-navigation)
-> -   Responsive sizes and Percentage
-> -   SVG as component JSX
-> -   Typescript
-> -   StatusBar helper
-
 [**RENTX**](./packages/rentx/README.md) (Chapter 3 - Consumes API/Chapter 4 - Offline First)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-
-> **Contents**
->
-> -   styled-components and theme
-> -   stack navigation (react-navigation)
-> -   Responsive sizes and Percentage
-> -   SVG as component JSX
-> -   Typescript
-> -   StatusBar helper
-> -   Date manipulation (date-fns)
-> -   SVG as component JSX
-> -   Asyncrhonous call and calling an API with Axios
-> -   Animations
-> -   Offfline first
-> -   WatermeloDB
-> -   Fast Image
-> -   NetInfo
 
 **RENTX backend** (Chapter 4 - Backend for mobile first on Ch-4)
 
 [**GitHub Explorer**](./packages/gitHubExplorere/README.md) (Chapter 2 - Challenge 1: SavePass App)
 
+[**performanceapp**](./packages/performanceapp/README.md) (Chapter 5 - Performing apps)
+
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-
-> **Contents**
->
-> -   styled-components and theme
-> -   stack navigation (react-navigation)
-> -   Responsive sizes and Percentage
-> -   SVG as component JSX
-> -   Typescript
-> -   StatusBar helper
-> -   Date manipulation (date-fns)
-> -   UUID generation
-> -   Asyncrhonous call and calling an API with Axios
-> -   Animations
-
-## How to install and execute
-
-> **Atention:** some projects nedds a extra steps to work
-
-1. Clone this repository locally `$ git clone https://github.com/josueplacido/monorepo_rockektseat_ignite.git`
-1. Install the dependencies of the projects. Inside the root `cd packages/[project-name]` and then `$ yarn install` or `npm install`
-1. Configure .env file if is necessary
-1. Start the application `yarn start-app` or start app in the root `$ yarn start-[projectname]`
-
-> `OBS: some projects have a bug with metro recongnize some modules, the objects "monorepo configuration" contain que the adjust scripts and the workspaces folders configs `
 
 ## Autor
 

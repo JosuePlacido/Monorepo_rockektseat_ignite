@@ -1,5 +1,9 @@
 # gitHubExplorer - Ignite | React Native
 
+<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=25-JUL-2022&color=green&style=flat"/>
+</a>
+
 ## Challenge 05 - gitHubExplorer
 
 ## :page_with_curl: About <a id = "sobre"></a>
@@ -35,8 +39,16 @@ Application pre-developed by Rocketseat in the course (Ignite), where the focus 
 
 ### Concepts studed or applied
 
--   Consuming resources from external API
--   animations
+-   styled-components and theme
+-   stack navigation (react-navigation)
+-   Responsive sizes and Percentage
+-   SVG as component JSX
+-   Typescript
+-   StatusBar helper
+-   Date manipulation (date-fns)
+-   UUID generation
+-   Asyncrhonous call and calling an API with Axios
+-   Animations
 
 ## Autor
 

@@ -1,28 +1,12 @@
-# To.Do - Ignite | React Native
+# performanceapp - Ignite | React Native
 
-  <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&message=29/05/2022&color=green&style=flat"/>
-  </a>
-
-## Challenge One
+<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=29-NOV-2023&color=green&style=flat"/>
+</a>
 
 ## :page_with_curl: About <a id = "sobre"></a>
 
-Application pre-developed by Rocketseat in the course (Ignite), where the focus of the challenge's implemente function with the logic of events on application
-
-[Challenge 1 - Concepts of RN](https://www.notion.so/Desafio-01-Conceitos-do-React-Native-424de969f3274ed5b9b49534b288a04d)
-
-[Challenge 2 - Add edit mode and alerts](https://www.notion.so/Desafio-02-Adicionando-edi-o-e-alertas-800f949f3915496d8238031a8239124b)
-
-## Missions
-
-1. Make the counter in Header of Home works.
-1. Implement logic for the creation of Task.
-1. Make the Tasks removible
-1. Permit Tasks Togglable Done/Undone
-1. Edit a Task
-1. Shows alert for delete confirmation
-1. Shows alert when trying Task with same name.
+Application developed in the Rocketseat course (Ignite), where the focus of the course is learn to consumes API and animations with React Native. We developed an application for rent a car in the app.
 
 ## Technologies <a id="tecs"></a>
 
@@ -30,6 +14,7 @@ Application pre-developed by Rocketseat in the course (Ignite), where the focus 
 
 -   [Git](https://git-scm.com)
 -   [NodeJs](https://nodejs.org/en/)
+-   [Expo](https://expo.dev/)
 -   [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
 
 ### Languages, frameworks and libs
@@ -40,14 +25,9 @@ Application pre-developed by Rocketseat in the course (Ignite), where the focus 
 
 ### Concepts studed or applied
 
-> **Contents**
->
-> -   react-native-cli
-> -   useState
-> -   StyleSheet
-> -   Typescript
-> -   Modal
-> -   StatusBar helper
+-   FlatList
+-   useMemo and memoize
+-   useCallback
 
 ## Autor
 

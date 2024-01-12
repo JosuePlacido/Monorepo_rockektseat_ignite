@@ -1,5 +1,9 @@
 # GoFinances - Ignite | React Native
 
+<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=29/05/2022&color=green&style=flat"/>
+</a>
+
 <span style="display: flex;">
  <img style="margin: 20px auto;" src="./.github/logo.svg"/>
 </span>
@@ -44,15 +48,22 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 
 ### Concepts studed or applied
 
--   Reading environment variables
--   Login social (Google/Apple)
+-   Environment variable
+-   Login social
 -   Contexts
--   theming
--   stack and tabs navigation
--   validation of forms
--   generating Charts
--   Rect and Borderless buttons usage
--   Generate Avatars with https://ui-avatars.com/
+-   HookForm
+-   AsyncStorage
+-   styled-components and theme
+-   stack and bottom tabs (react-navigation)
+-   validation Yup
+-   Rect and borderless buttons
+-   Date manipulation (date-fns)
+-   Responsive sizes and Percentage
+-   SVG as component JSX
+-   Typescript
+-   StatusBar helper
+-   UUID generation
+-   Chart generation (victory-chart)
 
 ## Autor
 

@@ -1,5 +1,9 @@
 # RENTX - Ignite | React Native
 
+<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=29-NOV-2023&color=green&style=flat"/>
+</a>
+
 ## :page_with_curl: About <a id = "sobre"></a>
 
 Application developed in the Rocketseat course (Ignite), where the focus of the course is learn to consumes API and animations with React Native. We developed an application for rent a car in the app.
@@ -33,8 +37,20 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 
 ### Concepts studed or applied
 
--   Consumes the API
--   Animating the Components
+-   styled-components and theme
+-   stack navigation (react-navigation)
+-   Responsive sizes and Percentage
+-   SVG as component JSX
+-   Typescript
+-   StatusBar helper
+-   Date manipulation (date-fns)
+-   SVG as component JSX
+-   Asyncrhonous call and calling an API with Axios
+-   Animations
+-   Offfline first
+-   WatermeloDB
+-   Fast Image
+-   NetInfo
 -   SplashScreen animated
 
 ## Autor

@@ -1,4 +1,8 @@
-# GoFinances - Ignite | React Native
+# MySkills - Ignite | React Native | Trilha 2021
+
+  <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&message=23-NOV-2024&color=green&style=flat"/>
+  </a>
 
 ## :page_with_curl: About <a id = "sobre"></a>
 
@@ -20,9 +24,13 @@ Application developed in the Rocketseat course (Ignite), where the focus of the 
 
 ### Concepts studed or applied
 
--   Introducing to React native development
--   React Native with react-native-cli
--   useState
+> **Contents**
+>
+> -   Introducing to React native development
+> -   react-native-cli
+> -   useState
+> -   StyleSheet
+> -   Typescript
 
 ## Autor
 
