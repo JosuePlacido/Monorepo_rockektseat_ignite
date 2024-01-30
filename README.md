@@ -39,6 +39,10 @@
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
+[**To.Do**](./packages/ignite-desafio01-tarefas/README.md)(Chapter 1 - challenges)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
 ## Projects - Season 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)
