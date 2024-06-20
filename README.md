@@ -43,6 +43,10 @@
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
+[**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=development&color=orange&style=flat"/>
+
 ## Projects - Season 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)
