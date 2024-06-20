@@ -4,10 +4,14 @@
  <img style="margin: 20px auto;" src="./.github/Logo.png"/>
 </span>
 
-<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=20/06/2024&color=green&style=flat"/>
-</a>
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Em%20Desenvolvimento&color=orange&style=flat"/>
+<span style="display: flex; justify-content: center; align-items: center; gap: 10px">
+	<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
+		<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=20/06/2024&color=green&style=flat"/>
+	</a>
+	<a>
+		<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Em%20Desenvolvimento&color=orange&style=flat"/>
+	</a>
+</span>
 
 ## :computer: About <a id = "sobre"></a>
 
@@ -52,6 +56,7 @@ Application that stores classes and players in certain teams.
 -   navigation types
 -   States and mutability
 -   Componetization
+-   useEffect and useFocusEffect
 
 ## Autor
 
