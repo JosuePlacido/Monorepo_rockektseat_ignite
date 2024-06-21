@@ -33,7 +33,7 @@
 
 > Repository with al content developed by me in Ignite Experience of [Rocketseat](https://github.com/Rocketseat).
 
-## Projects - Season 2024
+## Projects React Native - Season 2024
 
 [**ImHere**](./packages/imhere/README.md)(Chapter 1)
 
@@ -44,6 +44,11 @@
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
 [**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+[**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
+
+[**DailyDiet**](./packages/dailydiet/README.md)(Chapter 02 - challenges)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=development&color=orange&style=flat"/>
 
