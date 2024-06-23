@@ -9,7 +9,7 @@
 		<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=21/06/2024&color=green&style=flat"/>
 	</a>
 	<a>
-		<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Em%20Desenvolvimento&color=orange&style=flat"/>
+		<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 	</a>
 </span>
 
@@ -25,22 +25,14 @@ Daily Diet is a mobile application for controlling your diet. Here you can recor
 
 <span style="display: flex; overflow-x: auto">
  <img width="280" height="500" src="./.github/home.png"/>
- <img width="280" height="500" src="./.github/stats.png"/>
- <img width="280" height="500" src="./.github/home2.png"/>
  <img width="280" height="500" src="./.github/stats2.png" style="margin-right: 20px;"/>
 
  <img width="280" height="500" src="./.github/create.png"/>
- <img width="280" height="500" src="./.github/create-full.png"/>
- <img width="280" height="500" src="./.github/create-feedback.png" style="margin-right: 20px;"/>
-
- <img width="280" height="500" src="./.github/create-full2.png"/>
+ <img width="280" height="500" src="./.github/create-full.png" style="margin-right: 20px;"/>
+ <img width="280" height="500" src="./.github/create-feedback.png"/>
  <img width="280" height="500" src="./.github/create-feedback2.png" style="margin-right: 20px;"/>
 
- <img width="280" height="500" src="./.github/ondiet.png"/>
- <img width="280" height="500" src="./.github/edit.png" style="margin-right: 20px;"/>
  <img width="280" height="500" src="./.github/outOfDiet.png"/>
- <img width="280" height="500" src="./.github/edit2.png" style="margin-right: 20px;"/>
-
  <img width="280" height="500" src="./.github/delete.png" style="margin-right: 20px;"/>
 </span>
 

@@ -50,7 +50,7 @@
 
 [**DailyDiet**](./packages/dailydiet/README.md)(Chapter 02 - challenges)
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=development&color=orange&style=flat"/>
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
 ## Projects - Season 2021
 
