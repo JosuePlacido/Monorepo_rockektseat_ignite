@@ -52,6 +52,10 @@
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
+[**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03 - components and API)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Development&color=orange&style=flat"/>
+
 ## Projects - Season 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)

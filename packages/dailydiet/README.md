@@ -6,7 +6,7 @@
 
 <span style="display: flex; justify-content: center; align-items: center; gap: 10px">
 	<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-		<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=21/06/2024&color=green&style=flat"/>
+		<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=23/06/2024&color=green&style=flat"/>
 	</a>
 	<a>
 		<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
