@@ -1,7 +1,7 @@
 # Ignite GYM - Ignite | React Native
 
 <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=24/06/2022&color=green&style=flat"/>
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=25/06/2022&color=green&style=flat"/>
 </a>
 
 <span style="display: flex;">
@@ -34,12 +34,15 @@ Application developed in the Rocketseat course (Ignite). We developed an applica
 -   [React Navigation](https://reactnavigation.org/): Navigate between screens:
 -   [react-native-svg](https://github.com/react-native-svg/react-native-svg): Support the usage of SVGs files
 -   [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer): Permit import SVG as a JSX/TSX component.
+-   [react-hook-form](https://github.com/kristerkari/react-native-svg-transformer): Permit import SVG as a JSX/TSX component.
 
 ### Concepts studed or applied
 
 -   Building interface with Component library
 -   SVG as component JSX
--   Typescript
+-   validacao com yup
+-   controle de formulario com reac-hook-form
+-   update picture with file in gallery
 
 ## Autor
 
