@@ -46,7 +46,6 @@
 [**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-[**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
 
 [**DailyDiet**](./packages/dailydiet/README.md)(Chapter 02 - challenges)
 
@@ -54,7 +53,11 @@
 
 [**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03/04 - library component and API)
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Development&color=orange&style=flat"/>
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+[**marketspace**](./packages/marketspace/README.md)(Chapter 03/04 - challenges)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
 ## Projects - Season 2021
 

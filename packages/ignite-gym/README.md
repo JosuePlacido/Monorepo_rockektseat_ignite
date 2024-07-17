@@ -1,7 +1,7 @@
 # Ignite GYM - Ignite | React Native
 
 <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=25/06/2022&color=green&style=flat"/>
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=28/06/2022&color=green&style=flat"/>
 </a>
 
 <span style="display: flex;">
@@ -43,6 +43,8 @@ Application developed in the Rocketseat course (Ignite). We developed an applica
 -   validacao com yup
 -   controle de formulario com reac-hook-form
 -   update picture with file in gallery
+-   refresh token rotation strategy
+-   upload image to api
 
 ## Autor
 
