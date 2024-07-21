@@ -57,7 +57,20 @@
 
 [**marketspace**](./packages/marketspace/README.md)(Chapter 03/04 - challenges)
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+<img alt="logo" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+-   <span style="display: flex; gap: 10px;">
+    <img alt="Status" src="./packages/igniteshoesapp/assets/favicon.png"/>
+
+    <span>
+
+    [**igniteshoes**](./packages/igniteshoesapp/README.md)(Chapter 05 - Notifications push and deep linking)
+
+    <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+
+    </span>
+
+    </span>
 
 ## Projects - Season 2021
 
