@@ -22,6 +22,7 @@ import { ExerciseDTO } from "@dtos/ExercisesDTO";
 import { api } from "@services/api";
 import AppError from "api/src/utils/AppError";
 import { Loading } from "@components/Loading";
+import { updateTagLastDayTraining } from "src/Notifications/tags";
 type RouteParamsProps = {
 	exerciseId: string;
 };
@@ -44,7 +45,16 @@ export function Exercise() {
 		try {
 			setIsLoading(true);
 			const response = await api.get(`/exercises/${exerciseId}`);
-
+			console.log(response.status, response.data, response.statusText);
+			if (!response.data) {
+				toast.show({
+					title: "exercicío não encontrado!",
+					placement: "top",
+					bgColor: "red.500"
+				});
+				console.log("voltar para home");
+				navigation.navigate("notFound");
+			}
 			setExercise(response.data);
 		} catch (error) {
 			const isAppError = error instanceof AppError;
@@ -73,7 +83,7 @@ export function Exercise() {
 				placement: "top",
 				bgColor: "green.500"
 			});
-
+			updateTagLastDayTraining();
 			navigation.navigate("history");
 		} catch (error) {
 			const isAppError = error instanceof AppError;

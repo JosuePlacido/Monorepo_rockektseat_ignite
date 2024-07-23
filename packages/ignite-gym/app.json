@@ -2,6 +2,7 @@
 	"expo": {
 		"name": "ignite-gym",
 		"slug": "ignite-gym",
+		"scheme": "ignitegym",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
@@ -12,10 +13,11 @@
 			"backgroundColor": "#ffffff"
 		},
 		"ios": {
-			"supportsTablet": true
+			"supportsTablet": true,
+			"bundleIdentifier": "com.rocketseat.ignitegym"
 		},
 		"android": {
-			"package": "com.default.ignite-gym",
+			"package": "com.rocketseat.ignitegym",
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#ffffff"
@@ -26,6 +28,12 @@
 		},
 		"plugins": [
 			"expo-font",
+			[
+				"onesignal-expo-plugin",
+				{
+					"mode": "development"
+				}
+			],
 			["expo-image-picker",
 				{
 					"photosPermission": "The app accesses your photos to let you share them with your friends."

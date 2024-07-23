@@ -13,6 +13,8 @@ import HistorySvg from "@assets/history.svg";
 import ProfileSvg from "@assets/profile.svg";
 import { useTheme } from "native-base";
 import { Platform } from "react-native";
+import { tagUserLogged } from "src/Notifications/tags";
+import { NotFound } from "@screens/NotFound";
 
 type AppRoutes = {
 	home: undefined;
@@ -21,6 +23,7 @@ type AppRoutes = {
 	};
 	profile: undefined;
 	history: undefined;
+	notFound: undefined;
 };
 
 export type AppNavigatorRoutesProps = BottomTabNavigationProp<AppRoutes>;
@@ -31,6 +34,7 @@ export function AppRoutes() {
 	const { sizes, colors } = useTheme();
 
 	const iconSize = sizes[6];
+	tagUserLogged("true");
 
 	return (
 		<Navigator
@@ -90,6 +94,11 @@ export function AppRoutes() {
 			<Screen
 				name="exercise"
 				component={Exercise}
+				options={{ tabBarButton: () => null }}
+			/>
+			<Screen
+				name="notFound"
+				component={NotFound}
 				options={{ tabBarButton: () => null }}
 			/>
 		</Navigator>

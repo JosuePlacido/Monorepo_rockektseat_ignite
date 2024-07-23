@@ -51,25 +51,28 @@
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
-[**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03/04 - library component and API)
+-   <span style="display: flex; gap: 10px;">
+    <img alt="Status" src="./packages/ignite-gym/src/assets/logo.svg"/>
+    <span>
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+    [**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03/Challenge 04 - library component, API and notifications)
 
-[**marketspace**](./packages/marketspace/README.md)(Chapter 03/04 - challenges)
+    <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+    </span>
+    </span>
+
+[**marketspace**](./packages/marketspace/README.md)(Chapter 03 - challenges)
 
 <img alt="logo" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
 -   <span style="display: flex; gap: 10px;">
     <img alt="Status" src="./packages/igniteshoesapp/assets/favicon.png"/>
-
     <span>
 
     [**igniteshoes**](./packages/igniteshoesapp/README.md)(Chapter 05 - Notifications push and deep linking)
 
     <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-
     </span>
-
     </span>
 
 ## Projects - Season 2021

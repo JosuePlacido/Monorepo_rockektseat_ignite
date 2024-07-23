@@ -1,7 +1,7 @@
 # Ignite GYM - Ignite | React Native
 
 <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=28/06/2022&color=green&style=flat"/>
+	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=23/07/2024&color=green&style=flat"/>
 </a>
 
 <span style="display: flex;">
@@ -35,6 +35,7 @@ Application developed in the Rocketseat course (Ignite). We developed an applica
 -   [react-native-svg](https://github.com/react-native-svg/react-native-svg): Support the usage of SVGs files
 -   [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer): Permit import SVG as a JSX/TSX component.
 -   [react-hook-form](https://github.com/kristerkari/react-native-svg-transformer): Permit import SVG as a JSX/TSX component.
+-   [oneSignal](https://onesignal.com/): send and manage push notifications
 
 ### Concepts studed or applied
 
@@ -45,6 +46,40 @@ Application developed in the Rocketseat course (Ignite). We developed an applica
 -   update picture with file in gallery
 -   refresh token rotation strategy
 -   upload image to api
+-   notification push
+-   deep linking
+-   environment variable
+
+### How to use 🚀
+
+```bash
+	# Configure the environment variable with .env file
+	# EXPO_PUBLIC_ONE_SIGNAL_ID: id do app on OneSignal
+	# EXPO_PUBLIC_API_ADDRESS: API address
+
+	#access the project ignite-gym
+	cd packages/ignite-gym
+
+	#start the api project
+	cd api && yarn dev # or npm run dev
+
+	#install dependencies
+	yarn #npm run install
+
+	#run app
+	yarn android # npm run android
+
+```
+
+-   SVG as component JSX
+-   validacao com yup
+-   controle de formulario com reac-hook-form
+-   update picture with file in gallery
+-   refresh token rotation strategy
+-   upload image to api
+-   notification push
+-   deep linking
+-   environment variable
 
 ## Autor
 

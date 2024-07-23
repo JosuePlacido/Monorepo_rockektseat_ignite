@@ -14,7 +14,7 @@ import BackgroundImg from "@assets/background.png";
 
 import { Input } from "@components/Input";
 import { Button } from "@components/Button";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { AuthNavigatorRoutesProps } from "@routes/auth.routes";
 import { Controller, useForm } from "react-hook-form";
 import { useAuth } from "@hooks/useAuth";
@@ -32,6 +32,7 @@ const signIpSchema = yup.object({
 });
 
 export function SignIn() {
+	const { name } = useRoute();
 	const [isLoading, setIsLoading] = useState(false);
 	const { singIn } = useAuth();
 	const toast = useToast();
@@ -96,7 +97,9 @@ export function SignIn() {
 						mb={6}
 						fontFamily="heading"
 					>
-						Acesse a conta
+						{name === "NotFound"
+							? "Faça login para acessar a tela"
+							: "Acesse a conta"}
 					</Heading>
 					<Controller
 						control={control}
