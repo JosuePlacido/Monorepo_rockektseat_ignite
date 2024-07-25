@@ -6,21 +6,14 @@
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-01B755">
-
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
-
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
-
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
-
   <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JosuePlacido/monorepo_rockektseat_ignite">
   </a>
-
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-
   <img alt="Github issues" src="https://img.shields.io/github/issues/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8" />
-
   <img alt="Github forks" src="https://img.shields.io/github/forks/JosuePlacido/NLW-03?color=56BEB8" />
    <a href="https://github.com/JosuePlacido/monorepo_rockektseat_ignite/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/JosuePlacido/monorepo_rockektseat_ignite?style=social">
@@ -51,29 +44,39 @@
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
--   <span style="display: flex; gap: 10px;">
-    <img alt="Status" src="./packages/ignite-gym/src/assets/logo.svg"/>
-    <span>
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" src="./packages/ignite-gym/src/assets/logo.svg"/>
+<span>
 
-    [**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03/Challenge 04 - library component, API and notifications)
+[**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03/Challenge 04 - library component, API and notifications)
 
-    <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-    </span>
-    </span>
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
 
 [**marketspace**](./packages/marketspace/README.md)(Chapter 03 - challenges)
 
 <img alt="logo" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
--   <span style="display: flex; gap: 10px;">
-    <img alt="Status" src="./packages/igniteshoesapp/assets/favicon.png"/>
-    <span>
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" src="./packages/igniteshoesapp/assets/favicon.png"/>
+<span>
 
-    [**igniteshoes**](./packages/igniteshoesapp/README.md)(Chapter 05 - Notifications push and deep linking)
+[**igniteshoes**](./packages/igniteshoesapp/README.md)(Chapter 04 - Notifications push and deep linking)
 
-    <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-    </span>
-    </span>
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
+
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" src="./packages/ignite-quiz/assets/favicon.png"/>
+<span>
+
+[**ignitequiz**](./packages/ignite-quiz/README.md)(Chapter 05 - Animations and feedbacks)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
 
 ## Projects - Season 2021
 
