@@ -78,6 +78,16 @@
 </span>
 </span>
 
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" src="./packages/coffedelivery/assets/Vector.png"/>
+<span>
+
+[**coffedelivery**](./packages/coffedelivery/README.md)(Challenge 05 - Animations and feedbacks)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
+
 ## Projects - Season 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)

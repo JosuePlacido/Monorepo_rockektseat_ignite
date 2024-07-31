@@ -1,4 +1,4 @@
-# Marketspace - Ignite | React Native
+# Coffe delivery - Ignite | React Native
 
 <span style="display: flex;">
  <img style="margin: 20px auto;" src="./assets/favicon.png"/>
@@ -15,11 +15,10 @@
 
 ## :computer: About <a id = "sobre"></a>
 
-It's a application with some quizes of software development.
+Coffee Delivery is a mobile application for purchasing coffees. This challenge is focused on building animations. This project is one of the challenges of the Ignite React Native course.
 
-The application can filter the questionary per difficulty, and save your answers on history, also you can delete the answer to.
-
-Wrong anser shows feedbacks with sounds, vibration, and animations. For the correct answers you have feedback with animations and sounds only. Have a visible feedback for some gestures on the ask screen.
+This app you can filter a list of coffees and adding to cart, to confirm the order you must be choose a size.
+this app have some animations and feedbacks for the gestures of user.
 
 <span style="display: flex;">
  <img style="margin: 20px auto;" src="./.github/brand.png"/>
