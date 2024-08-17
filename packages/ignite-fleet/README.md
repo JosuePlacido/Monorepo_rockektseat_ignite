@@ -1,7 +1,7 @@
-# Coffe delivery - Ignite | React Native
+# Ignite fleet - Ignite | React Native
 
 <span style="display: flex;">
- <img style="margin: 20px auto;" src="./src/assets/Logo.png"/>
+ <img style="margin: 20px auto;" src="./assets/icon.png" width="50" height="50"/>
 </span>
 
 <span style="display: flex; justify-content: center; align-items: center; gap: 10px">
@@ -51,29 +51,34 @@ This application was developed for create.
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [React Navigation](https://reactnavigation.org/)
 -   [React Navigation Native Stack](https://reactnavigation.org/docs/native-stack-navigator/)
--   [React Native Skia](https://docs.expo.dev/versions/latest/sdk/skia/)
--   [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/docs/)
--   [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/)
--   [Expo-AV](https://docs.expo.dev/versions/latest/sdk/av/)
--   [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/)
+-   [dayjs](https://day.js.org/)
+-   [realmDB](https://www.mongodb.com/pt-br/docs/atlas/device-sdks/)
+-   [expo task manager](https://docs.expo.dev/versions/latest/sdk/task-manager/)
+-   [expo location](https://docs.expo.dev/versions/latest/sdk/location/)
+-   [dotenv](https://www.dotenv.org/)
 
 ### Concepts studed or applied
 
--   SVG as component JSX
--   animations with React-Native Reanimated
--   using default animations
--   drawing object and simples animations with Skia
--   playing sound and vibrate the phone
--   animating from SVG content
--   capturing user gesture and animate the interface
+-   Login social with Google
+-   realmDB and offlineFirst
+-   synchronization cloud
+-   Google maps api
+-   get localizations on background
+-   go to phone settings
+-   create styled components variations
+-   custom toast messages
+-   custom map marker
+-   using pt-BR on date
+-   configuring environment variables
 
 ## 🚀 Run project
 
 ```bash
-	cd packages/coffedelivery
+	cd packages/ignite-fleet
 
 	#app
-	yarn start # or yarn android
+	npx expo prebuild
+	yarn android # or npom run android
 ```
 
 ## Autor

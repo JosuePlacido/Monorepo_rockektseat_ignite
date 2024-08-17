@@ -88,6 +88,16 @@
 </span>
 </span>
 
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" width="60" height="60" src="./packages/ignite-fleet/assets/icon.png"/>
+<span>
+
+[**Ignite fleet**](./packages/ignite-fleet/README.md)(Chapter 06 - Offiline first and geolocalization)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
+
 ## Projects - Season 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)
