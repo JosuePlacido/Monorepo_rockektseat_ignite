@@ -28,21 +28,45 @@
 
 ## Projects React Native - Season 2024
 
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" height="60" src="./packages/imhere/assets/logo.png"/>
+<span>
+
 [**ImHere**](./packages/imhere/README.md)(Chapter 1)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
+
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" height="60" src="./packages/todo/src/assets/images/logo/logo@2x.png"/>
+<span>
 
 [**To.Do**](./packages/ignite-desafio01-tarefas/README.md)(Chapter 1 - challenges)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
+
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" height="60" src="./packages/igniteteams/src/assets/logo.png"/>
+<span>
 
 [**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
 
-[**DailyDiet**](./packages/dailydiet/README.md)(Chapter 02 - challenges)
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" height="60" src="./packages/dailydiet/src/assets/logo.png" style="background-color: white"/>
+<span>
+
+[**DailyDiet**](./packages/dailydiet/README.md)(Challenge 02)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
 
 <span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
 <img alt="Status" src="./packages/ignite-gym/src/assets/logo.svg"/>
@@ -54,9 +78,16 @@
 </span>
 </span>
 
-[**marketspace**](./packages/marketspace/README.md)(Chapter 03 - challenges)
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" src="./packages/marketspace/src/assets/logo.svg"/>
 
-<img alt="logo" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+<span>
+
+[**Marketspace**](./packages/marketspace/README.md)(Challenge 03)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
 
 <span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
 <img alt="Status" src="./packages/igniteshoesapp/assets/favicon.png"/>
@@ -93,6 +124,16 @@
 <span>
 
 [**Ignite fleet**](./packages/ignite-fleet/README.md)(Chapter 06 - Offiline first and geolocalization)
+
+<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</span>
+</span>
+
+<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
+<img alt="Status" height="60" src="./packages/iweather-main/src/assets/logo.svg"/>
+<span>
+
+[**iWeather**](./packages/iweather-main/README.md)(Chapter 07 - Tests)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 </span>

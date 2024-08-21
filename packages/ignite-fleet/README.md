@@ -6,7 +6,7 @@
 
 <span style="display: flex; justify-content: center; align-items: center; gap: 10px">
 	<a href="https://github.com/JosuePlacido/nlw-03/commits/master">
-		<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=25/07/2024&color=green&style=flat"/>
+		<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&	message=19/08/2024&color=green&style=flat"/>
 	</a>
 	<a>
 		<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
@@ -15,11 +15,7 @@
 
 ## :computer: About <a id = "sobre"></a>
 
-It's a application for buy some coffees.
-
-The application can filter the products per type, and cart manager.
-
-This application was developed for create.
+Ignite Fleet is a mobile application that allows users to track their vehicle's history departures and arrivals. Created with React Native and Expo.
 
 <span style="display: flex;">
  <img style="margin: 20px auto;" src="./.github/brand.png"/>

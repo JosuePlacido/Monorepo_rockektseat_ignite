@@ -1,5 +1,8 @@
 # ImHere - Ignite | React Native | Trilha 2021
 
+<span style="display: flex;">
+ <img style="margin: 20px auto;" src="./assets/logo.png" width="50" height="50"/>
+</span>
   <a href="https://github.com/JosuePlacido/nlw-03/commits/master">
 	<img alt="Último commit" src="https://img.shields.io/static/v1?label=last update&message=23-NOV-2024&color=green&style=flat"/>
   </a>
@@ -7,6 +10,13 @@
 ## :page_with_curl: About <a id = "sobre"></a>
 
 Application developed in the Rocketseat course (Ignite), where the focus of the course is the use of Firebase in React Native. We developed an application that has the responsibility to manage a list of users.
+
+## 🎨 Layout <a id = "sobre"></a>
+
+<span style="display: flex;align-items: flex-start; overflow-x: auto; gap: 5px;">
+ <img width="280" src="./.github/screen.png"/>
+ <img width="280" src="./.github/screen2.png"/>
+</span>
 
 ## Technologies <a id="tecs"></a>
 
