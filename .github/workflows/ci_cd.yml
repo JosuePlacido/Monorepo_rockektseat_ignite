@@ -23,7 +23,7 @@ jobs:
               run: npm install
 
             - name: Run Tests
-              run: cd ./packages/iweather-main && yarn test
+              run: cd ./packages/iweather-main && npm run test
 
     CD:
         name: Continuous Delivery
