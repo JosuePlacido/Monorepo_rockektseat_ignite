@@ -17,7 +17,8 @@
 		"start-rentx": "cd ./packages/rentx && expo start",
 		"start-githubexplorer": "cd ./packages/gitHubExplorere && expo start",
 		"start-app": "yarn workspace @ignite/app start",
-		"reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
+		"reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock",
+		"test-iweather": "cd ./packages/iweather-main && jest"
 	},
 	"configs-for-monorepo": {
 		"workspaces": {
