@@ -40,11 +40,14 @@ jobs:
               with:
                   node-version: 18.x
 
+            - name: access project folder
+              run: cd ./packages/iweather-main && npm run
+              
             - name: Setup EAS
               uses: expo/expo-github-action@v8
               with:
                   eas-version: latest
-                  packager: npm
+                  packager: yarn
                   token: ${{ secrets.EAS_EXPO_TOKEN }}
 
             - name: Build
