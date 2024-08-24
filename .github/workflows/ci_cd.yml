@@ -22,11 +22,8 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-            - name: where i am
-              run: cd ./packages/iweather-main && npm run
-
             - name: Run Tests
-              run: npm test-iweather
+              run: npm run test-iweather
 
     CD:
         name: Continuous Delivery
