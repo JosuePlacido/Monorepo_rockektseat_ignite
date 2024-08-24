@@ -20,10 +20,10 @@ jobs:
                   node-version: 18.x
 
             - name: Install dependencies
-              run: npm install
+              run: cd ./packages/iweather-main && yarn
 
             - name: Run Tests
-              run: cd ./packages/iweather-main && npm run test
+              run: cd ./packages/iweather-main && yarn test
 
     CD:
         name: Continuous Delivery
