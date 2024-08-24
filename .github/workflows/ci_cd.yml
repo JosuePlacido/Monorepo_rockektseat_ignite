@@ -19,17 +19,14 @@ jobs:
               with:
                   node-version: 18.x
 
-            - name: Access project folder
-              run: cd packages/iweather-main
-
             - name: Install dependencies
               run: npm install
 
             - name: where i am
-              run: npm run
+              run: cd packages/iweather-main & npm run
               
             - name: Run Tests
-              run: npm test
+              run: cd packages/iweather-main & npm test
               
 
     CD:
