@@ -44,6 +44,8 @@ The application is designed with a modern and user-friendly interface, so users 
 -   [React Navigation](https://reactnavigation.org/)
 -   [React Navigation Native Stack](https://reactnavigation.org/docs/native-stack-navigator/)
 -   [jest](https://jestjs.io/pt-BR/)
+-   [github actions](https://github.com/)
+-   [Expo dev](https://expo.dev)
 
 ### Concepts studed or applied
 
@@ -53,6 +55,8 @@ The application is designed with a modern and user-friendly interface, so users 
 -   before and after
 -   asynchonous tests
 -   coverages
+-   manual deploy
+-   CI and CD
 
 ## 🚀 Run project
 
