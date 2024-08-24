@@ -1,33 +1,39 @@
 {
-  "expo": {
-    "name": "iweather",
-    "slug": "iweather",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "experiments": {
-      "tsconfigPaths": true
-    }
-  }
+	"expo": {
+		"name": "iweather",
+		"slug": "iweather",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#13131A"
+		},
+		"assetBundlePatterns": [
+			"**/*"
+		],
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#13131A"
+			},
+			"package": "com.josueplacido.iweather"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"experiments": {
+			"tsconfigPaths": true
+		},
+		"extra": {
+			"eas": {
+				"projectId": "da141dbb-9010-42cc-90dd-e3e6d90ee027"
+			}
+		}
+	}
 }
