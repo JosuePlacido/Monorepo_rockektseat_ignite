@@ -56,7 +56,7 @@
     Ignite GYM</a> - Chapter 03: Components and API requests and Challenge 04: adding Push notifications</b>
 
 -   <b><a href="/packages/marketspace/README.md">
-    <img alt="Logo ignite MARKETSPACE" height="60" src="./packages/marketspace/assets/icon.png"/>
+    <img alt="Logo ignite MARKETSPACE" height="60" src="./packages/marketspace/src/assets/logo.svg"/>
     Marketspace</a> - Challenge 03: Components and API requests</b>
 
 -   <b><a href="/packages/igniteshoesapp/README.md">
@@ -86,7 +86,7 @@
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
 -   <b><a href="/packages/ignite-desafio01-tarefas/README.md">
-    <img alt="Logo to.do" height="60" src="./packages/todo/.github/Logo.png"/>
+    <img alt="Logo to.do" height="60" src="./packages/todo/assets/icon.png"/>
     to.do</a> - Challenge 01: React Native basics</b>
 
 [**GoFinance**](./packages/gofinance/README.md) (Chapter 2)
