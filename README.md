@@ -4,7 +4,7 @@
    <img src="./.github/logo.svg" alt="Ignite" width="180"/>
 </p>
 
-<p align="center">
+<div align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-01B755">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/JosuePlacido/monorepo_rockektseat_ignite?color=56BEB8">
@@ -22,132 +22,72 @@
 
 [![GitHub commits](https://badgen.net/github/commits/Naereen/Strapdown.js)](https://github.com/skyxcripto/gopizza/commits?author=skyxcripto)
 
-</p>
+</div>
 
 > Repository with al content developed by me in Ignite Experience of [Rocketseat](https://github.com/Rocketseat).
 
-## Projects React Native - Season 2024
+<details>
+  <summary>
 
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" height="60" src="./packages/imhere/assets/logo.png"/>
-<span>
+## ![](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-[**ImHere**](./packages/imhere/README.md)(Chapter 1)
+  </summary>
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
+### Trail 2024
 
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" height="60" src="./packages/todo/src/assets/images/logo/logo@2x.png"/>
-<span>
+-   <b><a href="/packages/imhere/README.md">
+    <img alt="Logo im here" height="60" src="./packages/imhere/assets/icon.png"/>
+    ImHere</a> - Chapter 01: React Native fundaments</b>
 
-[**To.Do**](./packages/ignite-desafio01-tarefas/README.md)(Chapter 1 - challenges)
+-   <b><a href="/packages/ignite-desafio01-tarefas/README.md">
+    <img alt="Logo to.do" height="60" src="./packages/todo/assets/icon.png"/>
+    to.do</a> - Challenge 01: React Native basics</b>
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
+-   <b><a href="/packages/igniteteams/README.md">
+    <img alt="Logo teams" height="60" src="./packages/igniteteams/src/assets/icon.png"/>
+    IgniteTeams</a> - Chapter 02: Interfaces, navigation and local storage</b>
 
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" height="60" src="./packages/igniteteams/src/assets/logo.png"/>
-<span>
+-   <b><a href="/packages/dailydiet/README.md">
+    <img alt="Logo Daily Diet" height="60" src="./packages/dailydiet/assets/icon.png"/>
+    Daily Diet</a> - Challenge 02</b>
 
-[**IgniteTeams**](./packages/igniteteams/README.md)(Chapter 2 - Interfaces, navigation and local storage)
+-   <b><a href="/packages/ignite-gym/README.md">
+    <img alt="Logo ignite gym" height="60" src="./packages/ignite-gym/assets/icon.png"/>
+    Ignite GYM</a> - Chapter 03: Components and API requests and Challenge 04: adding Push notifications</b>
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
+-   <b><a href="/packages/marketspace/README.md">
+    <img alt="Logo ignite MARKETSPACE" height="60" src="./packages/marketspace/assets/icon.png"/>
+    Marketspace</a> - Challenge 03: Components and API requests</b>
 
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" height="60" src="./packages/dailydiet/src/assets/logo.png" style="background-color: white"/>
-<span>
+-   <b><a href="/packages/igniteshoesapp/README.md">
+    <img alt="Logo ignite IGNITESHOES" height="60" src="./packages/igniteshoesapp/assets/icon.png"/>
+    IgniteShoes</a> - Chapter 04: Notifications push and deep linking</b>
 
-[**DailyDiet**](./packages/dailydiet/README.md)(Challenge 02)
+-   <b><a href="/packages/ignite-quiz/README.md">
+    <img alt="Logo ignite IGNITEQUIZ" height="60" src="./packages/ignite-quiz/assets/icon.png"/>
+    IgniteQuiz</a> Chapter 05: Animations and feedbacks</b>
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
+-   <b><a href="/packages/coffedelivery/README.md">
+    <img alt="Logo ignite COFFEE DELIVERY" height="60" src="./packages/coffedelivery/assets/icon.png"/>
+    CoffeeDelivery</a> Challenge 05: Animations and feedbacks</b>
 
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" src="./packages/ignite-gym/src/assets/logo.svg"/>
-<span>
+-   <b><a href="/packages/ignite-fleet/README.md">
+    <img alt="Logo ignite IGNITE FLEET" height="60" src="./packages/ignite-fleet/assets/icon.png"/>
+    Ignite Fleet</a> Chapter 06: Offiline first and geolocalization</b>
 
-[**Ignite GYM**](./packages/ignite-gym/README.md)(Chapter 03/Challenge 04 - library component, API and notifications)
+-   <b><a href="/packages/iweather-main/README.md">
+    <img alt="Logo ignite IWEATHER" height="60" src="./packages/iweather-main/assets/icon.png"/>
+    iWeather</a> Chapter 07 and 08 - Tests and deploy</b>
 
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" src="./packages/marketspace/src/assets/logo.svg"/>
-
-<span>
-
-[**Marketspace**](./packages/marketspace/README.md)(Challenge 03)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" src="./packages/igniteshoesapp/assets/favicon.png"/>
-<span>
-
-[**igniteshoes**](./packages/igniteshoesapp/README.md)(Chapter 04 - Notifications push and deep linking)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" src="./packages/ignite-quiz/assets/favicon.png"/>
-<span>
-
-[**ignitequiz**](./packages/ignite-quiz/README.md)(Chapter 05 - Animations and feedbacks)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" src="./packages/coffedelivery/assets/Vector.png"/>
-<span>
-
-[**coffedelivery**](./packages/coffedelivery/README.md)(Challenge 05 - Animations and feedbacks)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" width="60" height="60" src="./packages/ignite-fleet/assets/icon.png"/>
-<span>
-
-[**Ignite fleet**](./packages/ignite-fleet/README.md)(Chapter 06 - Offiline first and geolocalization)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-<span style="border-radius: 8px;display: flex; gap: 10px; margin: 10px 0; background-color: #22222250; padding: 10px;">
-<img alt="Status" height="60" src="./packages/iweather-main/src/assets/logo.svg"/>
-<span>
-
-[**iWeather**](./packages/iweather-main/README.md)(Chapter 07 - Tests)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
-</span>
-</span>
-
-## Projects - Season 2021
+### Trail 2021
 
 [**MySkills**](./packages/myskills/README.md)(Chapter 1)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
 
-[**To.Do**](./packages/ignite-desafio01-tarefas/README.md)(Chapter 1 - challenges)
-
-<img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+-   <b><a href="/packages/ignite-desafio01-tarefas/README.md">
+    <img alt="Logo to.do" height="60" src="./packages/todo/.github/Logo.png"/>
+    to.do</a> - Challenge 01: React Native basics</b>
 
 [**GoFinance**](./packages/gofinance/README.md) (Chapter 2)
 
@@ -172,6 +112,7 @@
 [**performanceapp**](./packages/performanceapp/README.md) (Chapter 5 - Performing apps)
 
 <img alt="Status" src="https://img.shields.io/static/v1?label=status&message=Finished&color=green&style=flat"/>
+</details>
 
 ## Autor
 
