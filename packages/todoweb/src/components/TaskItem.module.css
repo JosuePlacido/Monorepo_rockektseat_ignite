@@ -1,0 +1,82 @@
+.container {
+	display: flex;
+	gap: 0.75rem;
+	padding: 1rem;
+	background-color: var(--gray-500);
+	border: 1px solid var(--gray-400);
+	border-radius: 8px;
+
+	transition: border-color 0.2s;
+}
+
+.container.completed {
+	text-decoration: line-through;
+	border-color: var(--gray-500);
+}
+
+.container p {
+	flex: 1;
+}
+
+.container .checkmark {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	border: 2px solid var(--blue);
+	border-radius: 12px;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+.container .checkmark svg {
+	visibility: hidden;
+}
+.container.completed .checkmark svg {
+	visibility: visible;
+}
+.container .checkmark:hover {
+	border: 2px solid var(--blue-dark);
+}
+
+.container .checkmark input[type="checkbox"] {
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.container.completed .checkmark {
+	border: 1px solid var(--purple-dark);
+	background-color: var(--purple-dark);
+}
+
+.container.completed .checkmark:hover {
+	border-color: var(--purple);
+	background-color: var(--purple);
+}
+
+.container button {
+	width: 24px;
+	height: 24px;
+	font-size: 0;
+	border-radius: 4px;
+	color: var(--gray-300);
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	transition: background-color 0.2s;
+}
+
+.container button:hover {
+	font-size: 0;
+	border-radius: 4px;
+	color: var(--red-500);
+	background-color: var(--gray-400);
+}

@@ -122,8 +122,13 @@
   </summary>
 
 -   <b><a href="/packages/ignite-feed/README.md">
-<img alt="Logo im here" height="40" src="./packages/ignite-feed/public/icon.svg"/>
-Ignitne Feed</a> - Chapter 01: Starting with ReactJS</b>
+    <img alt="Logo im here" height="40" src="./packages/ignite-feed/public/icon.svg"/>
+    Ignitne Feed</a> - Chapter 01: Starting with ReactJS</b>
+
+-   <b><a href="/packages/todoweb/README.md">
+    <img alt="Logo im here" height="40" src="./packages/todoweb/public/icon.svg"/>
+    To.Do</a> - Challenge 01: Todo app</b>
+
 </details>
 
 ## Autor

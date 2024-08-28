@@ -1,18 +1,25 @@
-# Ignite feed - ReactJS
+# To.Do - Ignite | React Native | Challenge 01
 
 <div align="center">
-	<img src="./public/icon.svg"/>
+    <img src="./public/icon.svg" alt="Logo" width="80" height="80">
 </div>
 
-## :computer: About <a id = "sobre"></a>
+## :page_with_curl: About <a id = "sobre"></a>
 
-It's a application to simulate the social feed.
+ToDo List é uma página web para criação e controle de tarefas.
 
-The layout on [FIGMA](<https://www.figma.com/design/dC6jCW9YXUA7jDMYT8GHnS/Ignite-Feed-(Community)?node-id=0-1&t=nD8DBfkEE3bMxolx-0>).
+[Challenge 1 - Starting with ReactJS](<https://www.figma.com/design/Kf0lzceoXWQEEQfUfjdm3x/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?node-id=4130-112&t=AQ5EuLQyjsuYHD6M-0>)
 
-<span style="display: flex;">
  <img style="margin: 20px auto;" src="./.github/brand.png"/>
-</span>
+
+## Missions
+
+[Challenge 1: TO.DO](https://efficient-sloth-d85.notion.site/Desafio-01-Praticando-os-conceitos-do-ReactJS-91fd63dd1a5b4a2796152de293ec1074)
+
+1. Make the counter in Header of Home works.
+1. Implement logic for the creation of Task.
+1. Make the Tasks removible
+1. Permit Tasks Togglable Done/Undone
 
 ## Technologies <a id="tecs"></a>
 
@@ -36,17 +43,17 @@ The layout on [FIGMA](<https://www.figma.com/design/dC6jCW9YXUA7jDMYT8GHnS/Ignit
 -   html tag time
 -   Typescript
 
-## 🚀 Run project
+### How to use 🚀
 
 ```bash
-	#aaccess the project folder
-	cd packages/ignite-feed
+	#access the project folder
+	cd packages/todoweb
 
 	#install dependencies
-	yarn # or npm install
+	yarn #npm run install
 
 	#start app
-	yarn dev # or npm run dev
+	yarn dev # npm run dev
 ```
 
 ## Autor
@@ -69,6 +76,7 @@ Developed ❤️ by Josué Placido! 👋🏽
 [yarn-badge]: https://img.shields.io/badge/YARN-2C8EBB?style=flat&logo=yarn&logoColor=ffffff
 [npm-badge]: https://img.shields.io/badge/any_text-18.18.x-black?style=flat&logo=Node.js&logoColor=ffffff&label=NodeJs&labelColor=339933
 [npm]: https://img.shields.io/badge/NPM-CB3837?style=flat&logo=npm&logoColor=ffffff
-[React]: https://img.shields.io/badge/18.3.x-5D5D5D?style=flat&logo=react&label=REACT&labelColor=20232A
-[typescript]: https://img.shields.io/badge/5.x-5D5D5D?style=flat&logo=typescript&logoColor=fff&label=TYPESCRIPT&labelColor=007ACC
 [vite]: https://img.shields.io/badge/VITE-B73BFE?style=flat&logo=vite&logoColor=FFD62E
+[React]: https://img.shields.io/badge/18.3.x-5D5D5D?style=flat&logo=react&label=REACT&labelColor=20232A
+[React-Native]: https://img.shields.io/badge/0.73.x-5D5D5D?style=flat&logo=react&label=REACT%20NATIVE&labelColor=20232A
+[typescript]: https://img.shields.io/badge/5.x-5D5D5D?style=flat&logo=typescript&logoColor=fff&label=TYPESCRIPT&labelColor=007ACC
