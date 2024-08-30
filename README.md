@@ -129,6 +129,10 @@
     <img alt="Logo im here" height="40" src="./packages/todoweb/public/icon.svg"/>
     To.Do</a> - Challenge 01: Todo app</b>
 
+-   <b><a href="/packages/ignite-timer/README.md">
+    <img alt="Logo im here" height="40" src="./packages/ignite-timer/public/icon.svg"/>
+    Ignite Timer</a> - Chapter 02: Hooks and Context API</b>
+
 </details>
 
 ## Autor
