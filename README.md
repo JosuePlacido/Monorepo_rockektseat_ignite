@@ -133,6 +133,10 @@
     <img alt="Logo im here" height="40" src="./packages/ignite-timer/public/icon.svg"/>
     Ignite Timer</a> - Chapter 02: Hooks and Context API</b>
 
+-   <b><a href="/packages/coffeedelivery-web/README.md">
+    <img alt="Logo im here" height="40" src="./packages/coffeedelivery-web/public/icon.svg"/>
+    CoffeeDelivery</a> - Challenge 02: CoffeDelivery WEB</b>
+
 </details>
 
 ## Autor

@@ -44,6 +44,7 @@ The layout on [FIGMA](<https://www.figma.com/design/gETLikWAMSxgC1yhIc6VrE/Ignit
 -   react contexts
 -   hook useReducer
 -   lib immer
+-   local storage
 
 ## 🚀 Run project
 
