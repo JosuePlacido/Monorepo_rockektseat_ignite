@@ -28,8 +28,9 @@ The layout on [FIGMA](<https://www.figma.com/design/gETLikWAMSxgC1yhIc6VrE/Ignit
 -   [![typescript]](https://www.typescriptlang.org/)
 -   [![vite]](https://vitejs.dev/)
 -   [![styled-components]](https://styled-components.com/)
+-   [![zod]](https://zod.dev/)
+-   [![react-router]](https://reactrouter.com/en/main)
 -   [React-hook-form](https://react-hook-form.com/)
--   [Zod](https://zod.dev/)
 -   [immer](https://immerjs.github.io/immer/)
 
 ### Concepts studed or applied
@@ -83,3 +84,5 @@ Developed ❤️ by Josué Placido! 👋🏽
 [typescript]: https://img.shields.io/badge/5.x-5D5D5D?style=flat&logo=typescript&logoColor=fff&label=TYPESCRIPT&labelColor=007ACC
 [vite]: https://img.shields.io/badge/VITE-B73BFE?style=flat&logo=vite&logoColor=FFD62E
 [styled-components]: https://img.shields.io/badge/STYLED--COMPONENTS-DB7093?style=flat&logo=styled-components&logoColor=fff
+[zod]: https://img.shields.io/badge/ZOD-000?style=flat&logo=zod&logoColor=3068B7
+[react-router]: https://img.shields.io/badge/REACT_ROUTER-CA4245?style=flat&logo=react-router&logoColor=fff

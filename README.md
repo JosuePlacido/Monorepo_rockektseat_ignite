@@ -137,6 +137,14 @@
     <img alt="Logo im here" height="40" src="./packages/coffeedelivery-web/public/icon.svg"/>
     CoffeeDelivery</a> - Challenge 02: CoffeDelivery WEB</b>
 
+-   <b><a href="/packages/dt-money/README.md">
+    <img alt="Logo im here" height="40" src="./packages/dt-money/public/icon.svg"/>
+    DT-Money</a> - Chapter 03: Request API and performance</b>
+
+-   <b><a href="/packages/github-blog/README.md">
+    <img alt="Logo im here" height="40" src="./packages/github-blog/public/icon.svg"/>
+    CoffeeDelivery</a> - Challenge 03: Github BLog</b>
+
 </details>
 
 ## Autor
