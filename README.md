@@ -149,6 +149,10 @@
     <img alt="Logo im here" height="40" src="./packages/pizza-shop/public/icon.svg"/>
     Pizza Shop</a> - Chapter 04: Integrating Frontend - Backend</b>
 
+-   <b><a href="/packages/ignite-shop/README.md">
+    <img alt="Logo" height="40" src="./packages/ignite-shop/public/icon.svg"/>
+    Ignite Shop</a> - Chapter 05: NextJS Fundaments</b>
+
 </details>
 
 ## Autor
