@@ -145,6 +145,10 @@
     <img alt="Logo im here" height="40" src="./packages/github-blog/public/icon.svg"/>
     CoffeeDelivery</a> - Challenge 03: Github BLog</b>
 
+-   <b><a href="/packages/pizza-shop/README.md">
+    <img alt="Logo im here" height="40" src="./packages/pizza-shop/public/icon.svg"/>
+    Pizza Shop</a> - Chapter 04: Integrating Frontend - Backend</b>
+
 </details>
 
 ## Autor
