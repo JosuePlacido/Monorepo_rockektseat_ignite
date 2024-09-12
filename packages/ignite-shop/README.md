@@ -27,6 +27,7 @@ The layout on [FIGMA](https://www.figma.com/file/nti0vr1hSqBOndAy4hnKPt/Ignite-S
 -   [![typescript]](https://www.typescriptlang.org/)
 -   [![React]](https://reactjs.org/)
 -   [![Next]](https://nextjs.org/)
+-   [![stitches]](https://stitches.dev/)
 
 ### Concepts studed or applied
 
@@ -65,7 +66,7 @@ Developed ❤️ by Josué Placido! 👋🏽
 [yarn-badge]: https://img.shields.io/badge/YARN-2C8EBB?style=flat&logo=yarn&logoColor=ffffff
 [npm-badge]: https://img.shields.io/badge/any_text-18.18.x-black?style=flat&logo=Node.js&logoColor=ffffff&label=NodeJs&labelColor=339933
 [npm]: https://img.shields.io/badge/NPM-CB3837?style=flat&logo=npm&logoColor=ffffff
-[React]: https://img.shields.io/badge/18.3.x-5D5D5D?style=flat&logo=react&label=REACT&labelColor=20232A
+[React]: https://img.shields.io/badge/18.x-5D5D5D?style=flat&logo=react&label=REACT&labelColor=20232A
 [typescript]: https://img.shields.io/badge/5.x-5D5D5D?style=flat&logo=typescript&logoColor=fff&label=TYPESCRIPT&labelColor=007ACC
 [radix]: https://img.shields.io/badge/RADIX-%23E9E4FE?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDM1IDM1IiBmaWxsPSIjMUMyMDI0Ij4KICA8cGF0aCBkPSJNMTcgMzVDMTAuMzcyNiAzNSA1IDMwLjA3NTEgNSAyNEM1IDE3LjkyNDkgMTAuMzcyNiAxMyAxNyAxM0wxNyAzNVoiIC8%2BCiAgPHJlY3QgeD0iNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiAvPgogIDxjaXJjbGUgY3g9IjI0IiBjeT0iNiIgcj0iNiIgLz4KPC9zdmc%2BCg%3D%3D
 [axios]: https://img.shields.io/badge/AXIOS-671ddf?style=flat&logo=axios
@@ -74,3 +75,4 @@ Developed ❤️ by Josué Placido! 👋🏽
 [jest]: https://img.shields.io/badge/JEST-C21325?style=flat&logo=jest&logoColor=ffffff
 [github-actions]: https://img.shields.io/badge/GITHUB_ACTIONS-282a2e?style=flat&logo=github-actions&logoColor=ffffff
 [next]: https://img.shields.io/badge/NEXT%20JS-000000?style=flat&logo=nextdotjs&logoColor=white
+[stitches]: https://img.shields.io/badge/STITCHES-fff?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDM1IDM1IiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSIxNy41IiBjeT0iMTcuNSIgcj0iMTQuNSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiI%2BPC9jaXJjbGU%2BPHBhdGggZD0iTTEyLjgxODQgMzEuMzIxOEwzMS44NzA5IDIwLjMyMTgiIHN0cm9rZT0iY3VycmVudENvbG9yIj48L3BhdGg%2BPHBhdGggZD0iTTMuMzE4MzYgMTQuODY3NEwyMi4zNzA5IDMuODY3NDMiIHN0cm9rZT0iY3VycmVudENvbG9yIj48L3BhdGg%2BPHBhdGggZD0iTTguNjUzMzIgMjkuMTA3N0wyNS45NzM4IDE5LjEwNzciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD48cGF0aCBkPSJNOS4yMTU4MiAxNi4wODE1TDI2LjUzNjMgNi4wODE1NCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI%2BPC9wYXRoPjxwYXRoIGQ9Ik0xMy4yMzM0IDE0LjIyOTdMMjIuNTA5OSAyMS4xMDc3IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BPHBhdGggZD0iTTE2LjY5NzMgMTIuMjMwMkwyNS45NzM2IDE5LjEwNzgiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD48cGF0aCBkPSJNOS4yMTU4MiAxNi4wODE1TDE5LjA0NTkgMjMuMTA3OCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPjwvc3ZnPgo%3D
