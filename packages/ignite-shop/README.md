@@ -28,10 +28,14 @@ The layout on [FIGMA](https://www.figma.com/file/nti0vr1hSqBOndAy4hnKPt/Ignite-S
 -   [![React]](https://reactjs.org/)
 -   [![Next]](https://nextjs.org/)
 -   [![stitches]](https://stitches.dev/)
+-   [![stripe]](https://stripe.com//)
 
 ### Concepts studed or applied
 
 -   Next Framework
+-   stylizing with stitches
+-   requesting on Stripe API
+-   environment variables
 
 ## 🚀 Run project
 
@@ -39,11 +43,12 @@ The layout on [FIGMA](https://www.figma.com/file/nti0vr1hSqBOndAy4hnKPt/Ignite-S
 # access the project folder
 cd pckages/ignite-shop
 
- #install dependencies
- yarn # or npm install
+# set the .env.local variables
+#install dependencies
+yarn # or npm install
 
- #start app
- yarn dev # or npm run dev
+#start app
+yarn dev # or npm run dev
 ```
 
 ## Autor
@@ -76,3 +81,4 @@ Developed ❤️ by Josué Placido! 👋🏽
 [github-actions]: https://img.shields.io/badge/GITHUB_ACTIONS-282a2e?style=flat&logo=github-actions&logoColor=ffffff
 [next]: https://img.shields.io/badge/NEXT%20JS-000000?style=flat&logo=nextdotjs&logoColor=white
 [stitches]: https://img.shields.io/badge/STITCHES-fff?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDM1IDM1IiBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSIxNy41IiBjeT0iMTcuNSIgcj0iMTQuNSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiI%2BPC9jaXJjbGU%2BPHBhdGggZD0iTTEyLjgxODQgMzEuMzIxOEwzMS44NzA5IDIwLjMyMTgiIHN0cm9rZT0iY3VycmVudENvbG9yIj48L3BhdGg%2BPHBhdGggZD0iTTMuMzE4MzYgMTQuODY3NEwyMi4zNzA5IDMuODY3NDMiIHN0cm9rZT0iY3VycmVudENvbG9yIj48L3BhdGg%2BPHBhdGggZD0iTTguNjUzMzIgMjkuMTA3N0wyNS45NzM4IDE5LjEwNzciIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD48cGF0aCBkPSJNOS4yMTU4MiAxNi4wODE1TDI2LjUzNjMgNi4wODE1NCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI%2BPC9wYXRoPjxwYXRoIGQ9Ik0xMy4yMzM0IDE0LjIyOTdMMjIuNTA5OSAyMS4xMDc3IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg%2BPHBhdGggZD0iTTE2LjY5NzMgMTIuMjMwMkwyNS45NzM2IDE5LjEwNzgiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD48cGF0aCBkPSJNOS4yMTU4MiAxNi4wODE1TDE5LjA0NTkgMjMuMTA3OCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI%2BPC9wYXRoPjwvc3ZnPgo%3D
+[stripe]: https://img.shields.io/badge/STRIPE-675DFF?style=flat&logo=stripe&logoColor=white
