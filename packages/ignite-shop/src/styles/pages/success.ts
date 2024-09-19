@@ -21,7 +21,11 @@ export const SuccessContainer = styled('main', {
 		marginTop: '2rem',
 		lineHeight: 1.4
 	},
-
+	ul: {
+		display: 'flex',
+		justifyContent: 'center',
+		marginBottom: '3rem'
+	},
 	a: {
 		display: 'block',
 		marginTop: '5rem',
@@ -36,19 +40,21 @@ export const SuccessContainer = styled('main', {
 	}
 });
 
-export const ImageContainer = styled('div', {
+export const ImageContainer = styled('li', {
 	width: '100%',
-	maxWidth: 130,
+	maxWidth: 145,
 	height: 145,
 	background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
-	borderRadius: 8,
+	borderRadius: '50%',
 	padding: '0.25rem',
 	marginTop: '4rem',
-
 	display: 'flex',
+	boxShadow: '0px 0px 60px rgba(0, 0, 0, 0.8)',
 	alignItems: 'center',
 	justifyContent: 'center',
-
+	'&:not(:first-of-type)': {
+		marginLeft: '-15%'
+	},
 	img: {
 		objectFit: 'cover'
 	}

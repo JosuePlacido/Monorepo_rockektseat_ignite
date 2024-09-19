@@ -3,11 +3,17 @@ import { styled } from '..';
 export const HomeContainer = styled('main', {
 	display: 'flex',
 	width: '100%',
-	maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
+	maxWidth: 'calc(100vw - ((100vw - 1440px) / 2))',
 	marginLeft: 'auto',
 	minHeight: 656
 });
-
+export const Content = styled('div', {
+	display: 'flex',
+	width: '100%',
+	marginLeft: 'auto',
+	minHeight: 656,
+	position: 'relative'
+});
 export const Product = styled('div', {
 	background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
 	borderRadius: 8,
@@ -60,4 +66,28 @@ export const Product = styled('div', {
 			opacity: 1
 		}
 	}
+});
+export const ButtonLeft = styled('div', {
+	background: 'linear-gradient(90deg, #000000 0%, transparent 100%)',
+	cursor: 'pointer',
+	position: 'absolute',
+	left: 0,
+	height: '100%',
+	width: '100px',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	zIndex: 1
+});
+export const ButtonRight = styled('div', {
+	background: 'linear-gradient(270deg, #000000 0%, transparent 100%)',
+	cursor: 'pointer',
+	position: 'absolute',
+	right: 0,
+	height: '100%',
+	width: '100px',
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	zIndex: 1
 });

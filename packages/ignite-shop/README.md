@@ -6,13 +6,21 @@
 
 ## :computer: About <a id = "sobre"></a>
 
-It's a application to .
+It's a application to simulate e-commerce of products, and integrate with stripe .
 
-The layout on [FIGMA](https://www.figma.com/file/nti0vr1hSqBOndAy4hnKPt/Ignite-Shop-%E2%80%A2-Projeto-React-Copy?fuid=885286489706210191).
+The layout on [FIGMA](https://www.figma.com/file/FxlDRKOmznBbTH8DsTgnZU/Ignite-Shop-2.0/duplicate).
+
+[Challenge 4 - Adding features to Ignite Shop](https://efficient-sloth-d85.notion.site/Desafio-04-Adicionando-features-ao-Ignite-Shop-91e5b2c26c9342f5b1375ba66907d0b7)
 
 <span style="display: flex;">
  <img style="margin: 20px auto;" src="./.github/brand.png"/>
 </span>
+
+## Missions
+
+1. add cart context.
+1. show total of items on cart.
+1. send a cart items to checkout
 
 ## Technologies <a id="tecs"></a>
 

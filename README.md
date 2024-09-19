@@ -151,7 +151,7 @@
 
 -   <b><a href="/packages/ignite-shop/README.md">
     <img alt="Logo" height="40" src="./packages/ignite-shop/public/icon.svg"/>
-    Ignite Shop</a> - Chapter 05: NextJS Fundaments</b>
+    Ignite Shop</a> - Chapter 05 and Challenge 04: NextJS Fundaments</b>
 
 </details>
 

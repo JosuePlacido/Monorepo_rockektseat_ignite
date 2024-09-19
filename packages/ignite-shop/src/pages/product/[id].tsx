@@ -1,41 +1,24 @@
-import axios from 'axios';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState } from 'react';
 import Stripe from 'stripe';
 
+import { Button } from '@/components/Button';
+import { IProduct } from '@/context/cart';
+import { useCart } from '@/hooks/useCart';
 import { stripe } from '@/lib/stripe';
 import { ImageContainer, ProductContainer, ProductDetails } from '@/styles/pages/product';
 interface ProductProps {
-	product: {
-		id: string;
-		name: string;
-		imageUrl: string;
-		price: string;
-		description: string;
-		defaultPriceId: string;
-	};
+	product: IProduct;
 }
 export default function Product({ product }: ProductProps) {
-	const [isCreatingCheckoutSession, setIsCreatingCheckoutSession] = useState(false);
+	const { addProductCart } = useCart();
 
-	async function handleBuyButton() {
-		try {
-			setIsCreatingCheckoutSession(true);
-
-			const response = await axios.post('/api/checkout', {
-				priceId: product.defaultPriceId
-			});
-
-			const { checkoutUrl } = response.data;
-
-			window.location.href = checkoutUrl;
-		} catch (err) {
-			setIsCreatingCheckoutSession(false);
-
-			alert('Falha ao redirecionar ao checkout!');
-		}
+	async function handleAddCart() {
+		addProductCart({
+			...product,
+			quantity: 1
+		});
 	}
 
 	return (
@@ -53,9 +36,7 @@ export default function Product({ product }: ProductProps) {
 
 				<p>{product.description}</p>
 
-				<button disabled={isCreatingCheckoutSession} onClick={handleBuyButton}>
-					Comprar agora
-				</button>
+				<Button onClick={() => handleAddCart()}>Adicionar a sacola</Button>
 			</ProductDetails>
 		</ProductContainer>
 	);
@@ -91,7 +72,8 @@ export const getStaticProps: GetStaticProps<any, { id: string }> = async ({ para
 					currency: 'BRL'
 				}).format((price.unit_amount || 0) / 100),
 				description: product.description,
-				defaultPriceId: price.id
+				defaultPriceId: price.id,
+				rawPrice: price.unit_amount
 			}
 		},
 		revalidate: 60 * 60 * 1 // 1 hours

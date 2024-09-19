@@ -5,10 +5,11 @@ import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { CaretLeft, CaretRight } from 'phosphor-react';
 import Stripe from 'stripe';
 
 import { stripe } from '@/lib/stripe';
-import { HomeContainer, Product } from '@/styles/pages/home';
+import { ButtonLeft, ButtonRight, Content, HomeContainer, Product } from '@/styles/pages/home';
 
 interface HomeProps {
 	products: {
@@ -19,34 +20,50 @@ interface HomeProps {
 	}[];
 }
 export default function Home({ products }: HomeProps) {
-	const [sliderRef] = useKeenSlider({
+	const [sliderRef, instanceRef] = useKeenSlider({
 		slides: {
 			perView: 3,
-			spacing: 48
+			spacing: 48,
+			origin: 'center'
 		}
 	});
+
+	function handleBackCarousel() {
+		instanceRef.current?.prev();
+	}
+	function handleNextCarousel() {
+		instanceRef.current?.next();
+	}
 
 	return (
 		<>
 			<Head>
 				<title>Home | Ignite Shop</title>
 			</Head>
-			<HomeContainer ref={sliderRef} className="keen-slider">
-				{products.map(product => {
-					return (
-						<Link href={`/product/${product.id}`} key={product.id} prefetch={false}>
-							<Product className="keen-slider__slide">
-								<Image src={product.imageUrl} width={520} height={480} alt="" />
+			<Content>
+				<ButtonLeft onClick={handleBackCarousel}>
+					<CaretLeft size={24} />
+				</ButtonLeft>
+				<HomeContainer ref={sliderRef} className="keen-slider">
+					{products.map(product => {
+						return (
+							<Link href={`/product/${product.id}`} key={product.id} prefetch={false}>
+								<Product className="keen-slider__slide">
+									<Image src={product.imageUrl} width={520} height={480} alt="" />
 
-								<footer>
-									<strong>{product.name}</strong>
-									<span>{product.price}</span>
-								</footer>
-							</Product>
-						</Link>
-					);
-				})}
-			</HomeContainer>
+									<footer>
+										<strong>{product.name}</strong>
+										<span>{product.price}</span>
+									</footer>
+								</Product>
+							</Link>
+						);
+					})}
+				</HomeContainer>
+				<ButtonRight onClick={handleNextCarousel}>
+					<CaretRight size={24} />
+				</ButtonRight>
+			</Content>
 		</>
 	);
 }
