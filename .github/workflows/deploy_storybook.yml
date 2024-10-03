@@ -19,9 +19,9 @@ jobs:
             - run: yarn ci
 
             - name: Building monorepo
-			  working-directory: ./packages/ignite-call
-			  run: yarn build
-
+	      working-directory: ./packages/ignite-call
+	      run: yarn build
+       
             - name: Deploy storybook
               working-directory: ./packages/ignite-call/packages/docs
               run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
