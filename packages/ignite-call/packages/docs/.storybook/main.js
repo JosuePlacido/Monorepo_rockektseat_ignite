@@ -25,6 +25,8 @@ const config = {
 	},
 	viteFinal: (config, { configType }) => {
 		if (configType === 'PRODUCTION') {
+			config.output.publicPath =
+				'/Monorepo_rockektseat_ignite/packages/ignite-call/packages/docs/storybook-static/';
 			config.base = '/Monorepo_rockektseat_ignite/';
 		}
 		return config;
