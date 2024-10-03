@@ -25,4 +25,5 @@ export const TextArea = styled('textarea', {
 		color: '$gray400'
 	}
 });
+TextArea.displayName = 'TextArea';
 export interface TextAreaProps extends ComponentProps<typeof TextArea> {}

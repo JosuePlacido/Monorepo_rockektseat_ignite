@@ -6,6 +6,13 @@ export default {
 	args: {
 		src: 'https://github.com/josueplacido.png',
 		alt: 'Diego Fernandes'
+	},
+	argTypes: {
+		src: {
+			control: {
+				type: 'text'
+			}
+		}
 	}
 } as Meta<AvatarProps>;
 export const Primary: StoryObj<AvatarProps> = {};

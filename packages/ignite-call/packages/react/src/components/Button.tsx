@@ -71,6 +71,7 @@ export const Button = styled('button', {
 		size: 'md'
 	}
 });
+Button.displayName = 'Button';
 export interface ButtonProps extends ComponentProps<typeof Button> {
 	as?: ElementType;
 }
