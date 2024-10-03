@@ -18,9 +18,9 @@ jobs:
 
             - run: npm ci
 
-            - 	name: Building monorepo
-				working-directory: ./packages/ignite-call
-				run: npm run build
+            - name: Building monorepo
+			  working-directory: ./packages/ignite-call
+			  run: npm run build
 
             - name: Deploy storybook
               working-directory: ./packages/ignite-call/packages/docs
