@@ -16,9 +16,11 @@ jobs:
               with:
                   node-version: 18
 
-            - run: yarn install --frozen-lockfile
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+              working-directory: ./packages/ignite-call
 
-            - name: Building monorepo
+            - name: Building
               working-directory: ./packages/ignite-call
               run: yarn build
 
