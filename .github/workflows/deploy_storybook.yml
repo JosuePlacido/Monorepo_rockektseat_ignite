@@ -9,21 +9,21 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Setup Node.js
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                  node-version: 16
+                  node-version: 18
 
-            - run: npm ci
+            - run: yarn ci
 
             - name: Building monorepo
 			  working-directory: ./packages/ignite-call
-			  run: npm run build
+			  run: yarn build
 
             - name: Deploy storybook
               working-directory: ./packages/ignite-call/packages/docs
-              run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+              run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
               env:
                   GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
