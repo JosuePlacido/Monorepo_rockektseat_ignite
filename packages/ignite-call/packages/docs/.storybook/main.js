@@ -22,6 +22,12 @@ const config = {
 	framework: {
 		name: getAbsolutePath('@storybook/react-vite'),
 		options: {}
+	},
+	viteFinal: (config, { configType }) => {
+		if (configType === 'PRODUCTION') {
+			config.base = '/Monorepo_rockektseat_ignite/';
+		}
+		return config;
 	}
 };
 export default config;
