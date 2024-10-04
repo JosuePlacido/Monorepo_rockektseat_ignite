@@ -1,4 +1,4 @@
-name: Release
+name: Release Ignite-Call packages NPM
 on:
     workflow_dispatch:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
@@ -19,9 +19,9 @@ jobs:
               working-directory: ./packages/ignite-call
               run: yarn install --frozen-lockfile
             - name: Publish to NPM
-              working-directory: ./packages/ignite-call
               id: changesets
               uses: changesets/action@v1
+              working-directory: ./packages/ignite-call
               with:
                   publish: yarn release
               env:
