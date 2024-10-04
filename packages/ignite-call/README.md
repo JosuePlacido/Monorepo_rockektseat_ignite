@@ -1,12 +1,12 @@
 # ignite-call
 
 <div align="center">
- <img src="./public/icon.svg"/>
+ <img src="./.github/icon.svg"/>
 </div>
 
 ## :computer: About <a id = "sobre"></a>
 
-It's a application to simulate e-commerce of products, and integrate with stripe .
+It's a application to manage your events, and agend.
 
 The layout on [FIGMA](https://www.figma.com/community/file/1161274296921389678/ignite-call).
 
@@ -28,6 +28,7 @@ The layout on [FIGMA](https://www.figma.com/community/file/1161274296921389678/i
 -   [![React]](https://reactjs.org/)
 -   [![stitches]](https://stitches.dev/)
 -   [![storybook]](https://storybook.js.org/)
+-   [![github-actions]](https://docs.github.com/pt/actions)
 
 ### Concepts studed or applied
 
@@ -36,14 +37,15 @@ The layout on [FIGMA](https://www.figma.com/community/file/1161274296921389678/i
 -   Documentation front end with Storybook
 -   Tokens and global configs
 -   TurboRepo
+-   Publish packages on NPMJS
+-   CI/CD with github actions
 
 ## 🚀 Run project
 
 ```bash
 # access the project folder
-cd pckages/ignite-shop
+cd pckages/ignite-call
 
-# set the .env.local variables
 #install dependencies
 yarn # or npm install
 

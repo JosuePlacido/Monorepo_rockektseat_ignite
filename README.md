@@ -153,6 +153,10 @@
     <img alt="Logo" height="40" src="./packages/ignite-shop/public/icon.svg"/>
     Ignite Shop</a> - Chapter 05 and Challenge 04: NextJS Fundaments</b>
 
+-   <b><a href="/packages/ignite-call/README.md">
+    <img alt="Logo" height="40" src="./packages/ignite-call/.github//icon.svg"/>
+    Ignite Call</a> - Chapter 06 and Challenge 06: Design System</b>
+
 </details>
 
 ## Autor
