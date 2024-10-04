@@ -23,6 +23,9 @@ jobs:
             - name: Building
               working-directory: ./packages/ignite-call
               run: yarn build
+              env:
+                  TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+                  TURBO_TEAM: josueplacido
 
             - name: Deploy storybook
               working-directory: ./packages/ignite-call/packages/docs
