@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD RN iWeather
 
 on:
     workflow_dispatch:

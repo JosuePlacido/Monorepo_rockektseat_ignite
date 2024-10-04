@@ -1,0 +1,31 @@
+name: Release
+on:
+    workflow_dispatch:
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+jobs:
+    release:
+        name: Release
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18
+                  cache: 'yarn'
+                  cache-dependency-path: '**/yarn.lock'
+            - name: Install dependencies
+              working-directory: ./packages/ignite-call
+              run: yarn install --frozen-lockfile
+            - name: Publish to NPM
+              working-directory: ./packages/ignite-call
+              id: changesets
+              uses: changesets/action@v1
+              with:
+                  publish: yarn release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+                  TURBO_TEAM: josueplacido
