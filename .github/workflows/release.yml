@@ -16,12 +16,12 @@ jobs:
                   cache: 'yarn'
                   cache-dependency-path: '**/yarn.lock'
             - name: Install dependencies
-              working-directory: ./packages/ignite-call
-              run: yarn install --frozen-lockfile
+              run: |
+                  cd packages/ignite-call
+                  yarn install --frozen-lockfile
             - name: Publish to NPM
               id: changesets
               uses: changesets/action@v1
-              working-directory: ./packages/ignite-call
               with:
                   publish: yarn release
               env:
