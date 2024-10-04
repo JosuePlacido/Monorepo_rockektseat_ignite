@@ -10,9 +10,16 @@ It's a application to manage your events, and agend.
 
 The layout on [FIGMA](https://www.figma.com/community/file/1161274296921389678/ignite-call).
 
+[Challenge 5 - Adding components to Design System](https://efficient-sloth-d85.notion.site/Desafio-05-Adicionando-mais-componentes-do-Design-System-62fe007e1bd143cb9c4af418b35bcf51)
+
 <span style="display: flex;">
  <img style="margin: 20px auto;" src="./.github/brand.png"/>
 </span>
+
+## Missions
+
+1. add toltip component.
+1. add Toast component.
 
 ## Technologies <a id="tecs"></a>
 
