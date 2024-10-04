@@ -16,22 +16,14 @@ jobs:
                   cache: 'yarn'
                   cache-dependency-path: '**/yarn.lock'
             - name: Install dependencies
-              run: |
-                  cd packages/ignite-call
-                  yarn install --frozen-lockfile
-
-            - name: Debug - Show current directory and list files
-              run: |
-                  echo "Current directory:"
-                  pwd
-                  echo "Files in current directory:"
-                  ls -la
+              run: yarn install --frozen-lockfile
+              working-directory: ./packages/ignite-call
 
             - name: Publish to NPM
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: yarn release
+                  publish: cd packages/ignite-call && yarn release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
