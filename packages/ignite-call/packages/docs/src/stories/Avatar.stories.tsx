@@ -1,4 +1,4 @@
-import { Avatar, AvatarProps } from '@ignite-ui/react';
+import { Avatar, AvatarProps } from '@jpstudytest/react';
 import type { Meta, StoryObj } from '@storybook/react';
 export default {
 	title: 'Data display/Avatar',

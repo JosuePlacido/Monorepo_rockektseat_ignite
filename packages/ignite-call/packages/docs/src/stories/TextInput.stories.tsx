@@ -1,4 +1,4 @@
-import { Box, Text, TextInput, TextInputProps } from '@ignite-ui/react';
+import { Box, Text, TextInput, TextInputProps } from '@jpstudytest/react';
 import type { Meta, StoryObj } from '@storybook/react';
 export default {
 	title: 'Form/Text Input',
@@ -27,6 +27,7 @@ export const Disabled: StoryObj<TextInputProps> = {
 };
 export const WithPrefix: StoryObj<TextInputProps> = {
 	args: {
-		prefix: 'cal.com/'
+		prefix: 'cal.com/',
+		placeholder: 'your-name'
 	}
 };

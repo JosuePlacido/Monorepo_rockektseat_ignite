@@ -1,5 +1,5 @@
 {
-	"name": "@ignite-ui/docs",
+	"name": "@jpstudytest/docs",
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
@@ -30,9 +30,9 @@
 		"vite": "^5.4.8"
 	},
 	"dependencies": {
-		"@ignite-ui/react": "*",
-		"@ignite-ui/tokens": "*",
-		"@ignite-ui/ts-config": "*",
+		"@jpstudytest/react": "*",
+		"@jpstudytest/tokens": "*",
+		"@jpstudytest/ts-config": "*",
 		"phosphor-react": "^1.4.1",
 		"polished": "^4.3.1",
 		"react": "^18.2.0",

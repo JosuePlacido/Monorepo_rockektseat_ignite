@@ -1,4 +1,4 @@
-import { Text, TextProps } from '@ignite-ui/react';
+import { Text, TextProps } from '@jpstudytest/react';
 import type { Meta, StoryObj } from '@storybook/react';
 export default {
 	title: 'Typography/Text',

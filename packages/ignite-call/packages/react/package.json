@@ -1,6 +1,6 @@
 {
-	"name": "@ignite-ui/react",
-	"version": "1.0.0",
+	"name": "@jpstudytest/react",
+	"version": "2.0.1",
 	"description": "",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -13,8 +13,8 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@ignite-ui/tokens": "*",
-		"@ignite-ui/ts-config": "*",
+		"@jpstudytest/tokens": "*",
+		"@jpstudytest/ts-config": "*",
 		"@types/react": "^18.3.10",
 		"@types/react-dom": "^18.3.0",
 		"react": "^18.3.1",

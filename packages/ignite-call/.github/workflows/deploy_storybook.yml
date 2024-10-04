@@ -16,6 +16,8 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: 18
+                  cache: 'yarn'
+                  cache-dependency-path: '**/yarn.lock'
 
             - name: Install dependencies
               run: yarn install --frozen-lockfile
@@ -24,6 +26,9 @@ jobs:
             - name: Building
               working-directory: ./packages/ignite-call
               run: yarn build
+			  env:
+                TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+                TURBO_TEAM: josueplacido
 
             - name: Deploy storybook
               working-directory: ./packages/ignite-call/packages/docs
