@@ -6,7 +6,7 @@ import { ArrowRight, Check } from 'phosphor-react';
 import { Container, Header } from '../styles';
 import { AuthError, ConnectBox, ConnectItem } from './styles';
 
-export default function Register() {
+export default function ConnectCalendar() {
 	const session = useSession();
 	const router = useRouter();
 
@@ -15,9 +15,10 @@ export default function Register() {
 	async function handleConnectCalendar() {
 		await signIn('google', { callbackUrl: '/register/connect-calendar' });
 	}
-	const userData = session.data?.user;
-	console.log(session);
 
+	async function handleNextStep() {
+		await router.push('/register/connect-calendar');
+	}
 	return (
 		<Container>
 			<Header>
@@ -49,7 +50,7 @@ export default function Register() {
 						acesso ao Google Calendar
 					</AuthError>
 				)}
-				<Button type="submit" disabled={!isSignedId}>
+				<Button type="button" disabled={!isSignedId} onClick={handleNextStep}>
 					Próximo passo
 					<ArrowRight />
 				</Button>
