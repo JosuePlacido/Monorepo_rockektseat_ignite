@@ -1,5 +1,6 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button, Checkbox, Heading, MultiStep, Text, TextInput } from '@ignite-ui/react';
+import { useRouter } from 'next/router';
 import { ArrowRight } from 'phosphor-react';
 import { Controller, useFieldArray, useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -69,6 +70,8 @@ export default function TimeIntervals() {
 			]
 		}
 	});
+	const router = useRouter();
+
 	const weekDays = getWeekDays();
 	const { fields } = useFieldArray({
 		control,
@@ -81,6 +84,7 @@ export default function TimeIntervals() {
 		await api.post('/users/time-intervals', {
 			intervals
 		});
+		await router.push('/register/update-profile');
 	}
 
 	return (
